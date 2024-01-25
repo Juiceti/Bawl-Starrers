@@ -29,5 +29,7 @@ public class Map extends World
         addObject(san, 400, 550);
         Piper pip = new Piper();
         addObject(pip, 200, 50);
+        LuffyF dog = new LuffyF();
+        addObject(dog, 500, 100);
     }
 }
