@@ -21,6 +21,20 @@ public class Lobby extends World
     }
     private void prepare(){
         Load load = new Load();
-        addObject(load, 400, 300);
+        addObject(load, 400, 175);
+        showText("A - DUEL", 400, 325);
+        showText("B - HOW TO PLAY", 400, 375);
+        showText("C - Credits", 400, 425);
+    }
+    private void switchA(){
+        if(Greenfoot.isKeyDown("a")){
+            
+        }
+    }
+    private void switchb(){
+        
+    }
+    private void switchc(){
+        
     }
 }
