@@ -14,6 +14,36 @@ public class GokuL extends Actor
      */
     public void act()
     {
-        // Add your action code here.
+        checkW();
+        checkS();
+        checkA();
+        checkD();
+    }
+    public void checkW() {
+        if (Greenfoot.isKeyDown("W")||Greenfoot.isKeyDown("up")) {
+            setImage(new GokuB().getImage());
+            setLocation(getX(),getY()-2);
+        }
+    }
+
+    public void checkS() {
+        if (Greenfoot.isKeyDown("S")||Greenfoot.isKeyDown("down")) {
+            setImage(new GokuF().getImage());
+            setLocation(getX(),getY()+2);
+        }
+    }
+
+    public void checkD() {
+        if (Greenfoot.isKeyDown("D")||Greenfoot.isKeyDown("right")) {
+            setImage(new GokuR().getImage());
+            setLocation(getX()+2,getY());
+        }
+    }
+
+    public void checkA() {
+        if (Greenfoot.isKeyDown("A")||Greenfoot.isKeyDown("left")) {
+            setImage(new GokuL().getImage());
+            setLocation(getX()-2,getY());
+        }
     }
 }

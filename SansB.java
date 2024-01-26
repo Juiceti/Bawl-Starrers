@@ -16,4 +16,7 @@ public class SansB extends Actor
     {
         // Add your action code here.
     }
+    public SansB(){
+        GreenfootImage image = getImage(); image.scale(image.getWidth() /2, image.getHeight() /2); setImage(image);
+    }
 }
