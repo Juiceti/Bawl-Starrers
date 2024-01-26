@@ -14,9 +14,37 @@ public class LuffyB extends Actor
      */
     public void act()
     {
-        // Add your action code here.
+        checkS();
+        checkW();
+        checkD();
+        checkA();
     }
     public LuffyB(){
         GreenfootImage image = getImage(); image.scale(image.getWidth() /2, image.getHeight() /2); setImage(image);
+    }
+    public void checkW(){
+        if (Greenfoot.isKeyDown("W")&& this != null){
+            getWorld().addObject(new LuffyB(),getX(),getY()-2);
+            getWorld().removeObject(this);
+        }
+    }
+    public void checkS(){
+        if (Greenfoot.isKeyDown("S")&& this != null){
+            getWorld().addObject(new LuffyF(),getX(),getY()+2);
+            getWorld().removeObject(this);
+        }
+    }
+    public void checkD(){
+        if (Greenfoot.isKeyDown("D")&& this != null){
+            getWorld().addObject(new LuffyR(),getX()+2,getY());
+            getWorld().removeObject(this);
+        }
+    }
+    public void checkA(){
+        if (Greenfoot.isKeyDown("A")&& this != null){
+            getWorld().addObject(new LuffyL(),getX()-2,getY());
+            getWorld().removeObject(this);
+        }
+        
     }
 }
