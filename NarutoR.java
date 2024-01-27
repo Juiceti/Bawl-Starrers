@@ -14,6 +14,36 @@ public class NarutoR extends Actor
      */
     public void act()
     {
-        // Add your action code here.
+        checkW();
+        checkS();
+        checkD();
+        checkA();
+    }
+    public void checkW() {
+        if (Greenfoot.isKeyDown("W")||Greenfoot.isKeyDown("up")) {
+            setImage(new NarutoB().getImage());
+            setLocation(getX(),getY()-2);
+        }
+    }
+
+    public void checkS() {
+        if (Greenfoot.isKeyDown("S")||Greenfoot.isKeyDown("down")) {
+            setImage(new NarutoF().getImage());
+            setLocation(getX(),getY()+2);
+        }
+    }
+
+    public void checkD() {
+        if (Greenfoot.isKeyDown("D")||Greenfoot.isKeyDown("right")) {
+            setImage(new NarutoR().getImage());
+            setLocation(getX()+2,getY());
+        }
+    }
+
+    public void checkA() {
+        if (Greenfoot.isKeyDown("A")||Greenfoot.isKeyDown("left")) {
+            setImage(new NarutoL().getImage());
+            setLocation(getX()-2,getY());
+        }
     }
 }
