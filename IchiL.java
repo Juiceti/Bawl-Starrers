@@ -14,9 +14,39 @@ public class IchiL extends Actor
      */
     public void act()
     {
-        // Add your action code here.
+        checkW();
+        checkS();
+        checkA();
+        checkD();
     }
     public IchiL(){
         GreenfootImage image = getImage(); image.scale(image.getWidth() /2, image.getHeight() /2); setImage(image);
+    }
+    public void checkW() {
+        if (Greenfoot.isKeyDown("W")||Greenfoot.isKeyDown("up")) {
+            setImage(new IchiB().getImage());
+            setLocation(getX(),getY()-2);
+        }
+    }
+
+    public void checkS() {
+        if (Greenfoot.isKeyDown("S")||Greenfoot.isKeyDown("down")) {
+            setImage(new IchiF().getImage());
+            setLocation(getX(),getY()+2);
+        }
+    }
+
+    public void checkD() {
+        if (Greenfoot.isKeyDown("D")||Greenfoot.isKeyDown("right")) {
+            setImage(new IchiR().getImage());
+            setLocation(getX()+2,getY());
+        }
+    }
+
+    public void checkA() {
+        if (Greenfoot.isKeyDown("A")||Greenfoot.isKeyDown("left")) {
+            setImage(new IchiL().getImage());
+            setLocation(getX()-2,getY());
+        }
     }
 }
