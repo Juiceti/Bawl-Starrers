@@ -18,6 +18,7 @@ public class Lobby extends World
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(800, 600, 1);
         prepare();
+        setMap();
     }
     private void prepare(){
         Load load = new Load();
@@ -26,9 +27,9 @@ public class Lobby extends World
         showText("B - HOW TO PLAY", 400, 375);
         showText("C - Credits", 400, 425);
     }
-    private void switchA(){
+    private void setMap(){
         if(Greenfoot.isKeyDown("a")){
-            
+            Greenfoot.setWorld(new Map());
         }
     }
     private void switchb(){
