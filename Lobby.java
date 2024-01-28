@@ -17,9 +17,7 @@ public class Lobby extends World
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(800, 600, 1);
-        prepare();
-        act();
-        blah();
+        addObject(new Text(), getWidth() / 2, getHeight() / 2);
     }
     public void act() {
         if (Greenfoot.mouseClicked(this)) {
@@ -29,7 +27,6 @@ public class Lobby extends World
     private void prepare(){
         Load load = new Load();
         addObject(load, 400, 175);
-        addObject(new Text(), getWidth() / 2, getHeight() / 2);
         showText("CLICK ANYWHERE TO DUEL", 400, 325);
         showText("B - HOW TO PLAY", 400, 375);
         showText("C - Credits", 400, 425);

@@ -10,10 +10,10 @@ public class Text extends Actor {
         // Check if a specific key is pressed (for example, the spacebar)
         if (Greenfoot.isKeyDown("space")) {
             // Display text when the spacebar is pressed
-            setImage(new GreenfootImage("Spacebar pressed", 24, Color.WHITE, Color.BLACK));
+            getWorld().showText("spacebar pressed", 400, 300);
         } else {
             // Clear the text
-            setImage(new GreenfootImage("")); // Clears the image
+            getWorld().showText("", 400, 300); // Clears the image
         }
     }
 }
