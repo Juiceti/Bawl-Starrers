@@ -25,7 +25,9 @@ public class NarutoL extends Actor
             setLocation(getX(),getY()-2);
         }
     }
-
+    public NarutoL(){
+        
+    }
     public void checkS() {
         if (Greenfoot.isKeyDown("S")||Greenfoot.isKeyDown("down")) {
             setImage(new NarutoF().getImage());

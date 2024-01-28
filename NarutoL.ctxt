@@ -1,15 +1,17 @@
 #BlueJ class context
 comment0.target=NarutoL
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ NarutoL\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\n\ Write\ a\ description\ of\ class\ NarutoL\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
 comment1.params=
 comment1.target=void\ act()
-comment1.text=\r\n\ Act\ -\ do\ whatever\ the\ NarutoL\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
+comment1.text=\n\ Act\ -\ do\ whatever\ the\ NarutoL\ wants\ to\ do.\ This\ method\ is\ called\ whenever\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\n
 comment2.params=
 comment2.target=void\ checkW()
 comment3.params=
-comment3.target=void\ checkS()
+comment3.target=NarutoL()
 comment4.params=
-comment4.target=void\ checkD()
+comment4.target=void\ checkS()
 comment5.params=
-comment5.target=void\ checkA()
-numComments=6
+comment5.target=void\ checkD()
+comment6.params=
+comment6.target=void\ checkA()
+numComments=7
