@@ -8,58 +8,68 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class shuriken extends Actor
 {
-    public boolean up;
-    public boolean down;
-    public boolean left;
-    public boolean right;
+    NarutoF nar = new NarutoF();
+    boolean newUp = nar.up;
+    NarutoF nar1 = new NarutoF();
+    boolean newDown = nar1.down;
+    NarutoF nar2 = new NarutoF();
+    boolean newLeft = nar2.left;
+    NarutoF nar3 = new NarutoF();
+    boolean newRight = nar3.right;
+    private int direction;
     /**
      * Act - do whatever the shuriken wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
+    public shuriken() {
+        GreenfootImage image = getImage();
+        image.scale(image.getWidth() /3, image.getHeight() /3); setImage(image);
+        if (newUp) {
+            direction = 0;
+        }
+        else if (newDown) {
+            direction = 1;
+        }
+        else if (newLeft) {
+            direction = 2;
+        }
+        else if (newRight){
+            direction = 3;
+        }
+    }
+    
     public void act()
     {
-        if(up){
-            while(getY()!=0){
-                setLocation(getX(), getY()+5);
-            }
+        
+        if(direction == 0){
+           setLocation(getX(), getY()+5); 
+        }
+                
+        else if(direction == 1){
+            
+                setLocation(getX(), getY()-5);
             
         }
-        else if(down){
-            while(getY()!=600){
-                setLocation(getX(), getY()-5);
-            }
-        }
-        else if(right){
-            while(getX()!=800){
+        else if(direction == 3){
+            
                 setLocation(getX()+5, getY());
             }
+        else {
             
-        }
-        else if(left){
-            while(getX()!=0){
-                setLocation(getX()-5, getY());
-            }
+            setLocation(getX()-5, getY());
+            
             
         }
     }
-    public shuriken(){
-        GreenfootImage image = getImage(); image.scale(image.getWidth() /3, image.getHeight() /3); setImage(image);
-    }
+        
     public void touchy() {
         Map world = (Map)getWorld();
-        if(getY()==0){
+        if(getY()==0 || getY()==600 || getX()==0 || getX()==800){
             getWorld().removeObject(this);
             
         }
-        else if(getY()==600){
+        else if (isTouching(LuffyF.class)) {
             getWorld().removeObject(this);
         }
-        else if(getX()==0){
-            getWorld().removeObject(this);
-        }
-        else if(getX()==800){
-            getWorld().removeObject(this);
-        }
-        
     }
 }

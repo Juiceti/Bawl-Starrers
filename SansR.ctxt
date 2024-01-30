@@ -3,14 +3,7 @@ comment0.target=SansR
 comment0.text=\n\ Write\ a\ description\ of\ class\ SansR\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
 comment1.params=
 comment1.target=void\ act()
-<<<<<<< HEAD
 comment1.text=\n\ Act\ -\ do\ whatever\ the\ SansR\ wants\ to\ do.\ This\ method\ is\ called\ whenever\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\n
-=======
-comment1.text=\r\n\ Act\ -\ do\ whatever\ the\ SansR\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
-<<<<<<< HEAD
-numComments=2
-=======
->>>>>>> 5a13d5ddafbf072f8d1206469ad4f9d0db53a8e6
 comment2.params=
 comment2.target=SansR()
 comment3.params=
@@ -22,4 +15,3 @@ comment5.target=void\ checkD()
 comment6.params=
 comment6.target=void\ checkA()
 numComments=7
->>>>>>> 9c92d6f0c1cd656dcceb0f11bcb2f1d74c6c3ebc
