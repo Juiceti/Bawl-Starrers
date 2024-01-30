@@ -19,16 +19,27 @@ public class shuriken extends Actor
     public void act()
     {
         if(up){
-            setLocation(getX(), getY()+5);
+            while(getY()!=0){
+                setLocation(getX(), getY()+5);
+            }
+            
         }
         else if(down){
-            setLocation(getX(), getY()-5);
+            while(getY()!=600){
+                setLocation(getX(), getY()-5);
+            }
         }
         else if(right){
-            setLocation(getX()+5, getY());
+            while(getX()!=800){
+                setLocation(getX()+5, getY());
+            }
+            
         }
         else if(left){
-            setLocation(getX()-5, getY());
+            while(getX()!=0){
+                setLocation(getX()-5, getY());
+            }
+            
         }
     }
     public shuriken(){
