@@ -8,7 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Lobby extends World
 {
-
+    
     /**
      * Constructor for objects of class Lobby.
      * 
@@ -43,7 +43,7 @@ public class Lobby extends World
         addObject(dog, 75, 500);
         boolean person1_clicked = false;
         String person1_character = "";
-        while(!person1_clicked){
+        /*while(!person1_clicked){
             if(Greenfoot.mouseClicked(cat)){
                 person1_clicked = true;
                 person1_character = "Kit";
@@ -68,7 +68,7 @@ public class Lobby extends World
                 person1_clicked =  true;
                 person1_character = "Luffy";
             }
-        }
+        }*/
         
     }
     private void prepare(){
@@ -78,7 +78,8 @@ public class Lobby extends World
         showText("Player 1, click on the character you would like to play to select it.", 400, 325);
         showText("B - HOW TO PLAY", 400, 375);
         showText("C - Credits", 400, 425);
-    }    
+    } 
+    
     private void pressB(){
         boolean pressed = false;
         if(Greenfoot.isKeyDown("b")){
