@@ -17,7 +17,9 @@ public class Lobby extends World
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(800, 600, 1);
-        addObject(new Text(), getWidth() / 2, getHeight() / 2);
+        addObject(new Text(), 400, 175);
+        prepare();
+        act();
     }
     public void act() {
         if (Greenfoot.mouseClicked(this)) {
@@ -28,29 +30,7 @@ public class Lobby extends World
         Load load = new Load();
         addObject(load, 400, 175);
         showText("CLICK ANYWHERE TO DUEL", 400, 325);
-        showText("B - HOW TO PLAY", 400, 375);
-        showText("C - Credits", 400, 425);
+        showText("HOLD SPACE FOR INSTRUCTIONS", 400, 375);
     }    
-    private void pressB(){
-        if(Greenfoot.isKeyDown("b")){
-            showText("", 400, 325);
-            showText("", 400, 375);
-            showText("", 400, 425);
-        }
-    }
-    private void switchc(){
-        
-    }
-    public void blah()
-    {
-        // Check if a specific key is pressed (for example, the spacebar)
-        if (Greenfoot.isKeyDown("space")) {
-            // Display text when the spacebar is pressed
-            showText("Spacebar pressed", getWidth() / 2, getHeight() / 2);
-        } else {
-            // Clear the text
-            showText("", getWidth() / 2, getHeight() / 2);
-        }
-    }
 }
 
