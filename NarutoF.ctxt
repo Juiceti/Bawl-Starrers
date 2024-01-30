@@ -1,9 +1,13 @@
 #BlueJ class context
 comment0.target=NarutoF
-comment0.text=\n\ Write\ a\ description\ of\ class\ NarutoF\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ NarutoF\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
 comment1.params=
 comment1.target=void\ act()
+<<<<<<< HEAD
 comment1.text=\n\ Act\ -\ do\ whatever\ the\ NarutoF\ wants\ to\ do.\ This\ method\ is\ called\ whenever\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\n
+=======
+comment1.text=\r\n\ Act\ -\ do\ whatever\ the\ NarutoF\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
+>>>>>>> 5478d558fd0a5d7f59e2e7fd7f07d340ed484711
 comment2.params=
 comment2.target=NarutoF()
 comment3.params=
@@ -14,6 +18,10 @@ comment5.params=
 comment5.target=void\ checkD()
 comment6.params=
 comment6.target=void\ checkA()
+<<<<<<< HEAD
 comment7.params=
 comment7.target=void\ shoot()
 numComments=8
+=======
+numComments=7
+>>>>>>> 5478d558fd0a5d7f59e2e7fd7f07d340ed484711

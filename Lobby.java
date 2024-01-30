@@ -8,7 +8,11 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Lobby extends World
 {
+<<<<<<< HEAD
     
+=======
+    public String test = "test";
+>>>>>>> 5478d558fd0a5d7f59e2e7fd7f07d340ed484711
     /**
      * Constructor for objects of class Lobby.
      * 
@@ -17,14 +21,13 @@ public class Lobby extends World
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(800, 600, 1);
-        addObject(new Text(), getWidth() / 2, getHeight() / 2);
+        addObject(new Text(), 400, 175);
+        prepare();
+        act();
     }
     public void act() {
-        prepare();
-        pressB();
-        choosing();
         if (Greenfoot.mouseClicked(this)) {
-        Greenfoot.setWorld(new Map());
+        Greenfoot.setWorld(new BrawlChoose());
         }
         
     }
@@ -74,6 +77,7 @@ public class Lobby extends World
     private void prepare(){
         Load load = new Load();
         addObject(load, 400, 175);
+<<<<<<< HEAD
         
         showText("Player 1, click on the character you would like to play to select it.", 400, 325);
         showText("B - HOW TO PLAY", 400, 375);
@@ -101,5 +105,12 @@ public class Lobby extends World
             showText("", getWidth() / 2, getHeight() / 2);
         }
     }
+=======
+        showText("CLICK ANYWHERE TO DUEL", 400, 325);
+        showText("HOLD SPACE FOR INSTRUCTIONS", 400, 375);
+        //showText("Player 1, click on the character you would like to play to select it.", 400, 325);
+    }    
+    
+>>>>>>> 5478d558fd0a5d7f59e2e7fd7f07d340ed484711
 }
 
