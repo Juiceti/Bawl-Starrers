@@ -8,7 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class NarutoF extends Actor
 {
-    private int reload = 50;
+    public int reload = 50;
     public boolean up = false;
     public boolean down = false;
     public boolean left = false;
@@ -81,23 +81,27 @@ public class NarutoF extends Actor
             
             if(Greenfoot.isKeyDown("space")){
                 if(up){
-                    getWorld().addObject(new shuriken(), getX(), getY()-10);
+                    shuriken shuri=new shuriken();
+                    getWorld().addObject(shuri, getX(), getY()-4);
                 }
                 else if(left){
-                    getWorld().addObject(new shuriken(), getX()-10, getY());
+                    shuriken shuri=new shuriken();
+                    getWorld().addObject(shuri, getX()+4, getY());
                 }
                 else if(right){
-                    getWorld().addObject(new shuriken(), getX()+10, getY());
+                    shuriken shuri=new shuriken();
+                    getWorld().addObject(shuri, getX()-4, getY());
                 }
-                else{
-                    getWorld().addObject(new shuriken(), getX(), getY()+10);
+                else if(down){
+                    shuriken shuri=new shuriken();
+                    getWorld().addObject(shuri, getX(), getY()-4);
                 }
                 
             
             
             reload = 50;
             
-        }
+            }
         }
     }
 }

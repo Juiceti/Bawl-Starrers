@@ -8,10 +8,6 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class shuriken extends Actor
 {
-    public boolean up;
-    public boolean down;
-    public boolean left;
-    public boolean right;
     NarutoF Nar=new NarutoF();
     /**
      * Act - do whatever the shuriken wants to do. This method is called whenever
@@ -19,47 +15,33 @@ public class shuriken extends Actor
      */
     public void act()
     {
-        if(Nar.up){
-            while(getY()!=0){
-                setLocation(getX(), getY()+5);
-            }
-            
+        if(Nar.up){ 
+            setLocation(getX(), getY()+5);
+            Nar.up=false;
         }
         else if(Nar.down){
-            while(getY()!=600){
-                setLocation(getX(), getY()-5);
-            }
+            setLocation(getX(), getY()-5);
+            Nar.down=false;
         }
         else if(Nar.right){
-            while(getX()!=800){
-                setLocation(getX()+5, getY());
-            }
-            
+            setLocation(getX()+5, getY());
+            Nar.right=false;
         }
-        else if(left){
-            while(getX()!=0){
-                setLocation(getX()-5, getY());
-            }
-            
+        else if(Nar.left){
+            setLocation(getX()-5, getY());
+            Nar.left=false;
         }
+        touchy();
     }
+    
     public shuriken(){
         GreenfootImage image = getImage(); image.scale(image.getWidth() /3, image.getHeight() /3); setImage(image);
     }
     public void touchy() {
         Map world = (Map)getWorld();
-        if(getY()==0){
+        if(isAtEdge()){
             getWorld().removeObject(this);
             
-        }
-        else if(getY()==600){
-            getWorld().removeObject(this);
-        }
-        else if(getX()==0){
-            getWorld().removeObject(this);
-        }
-        else if(getX()==800){
-            getWorld().removeObject(this);
         }
         
     }
