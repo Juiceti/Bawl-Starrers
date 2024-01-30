@@ -1,50 +1,44 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class NarutoL here.
+ * Write a description of class DisGoku here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class NarutoL extends Actor
+public class DisGoku extends Actor
 {
     /**
-     * Act - do whatever the NarutoL wants to do. This method is called whenever
+     * Act - do whatever the DisGoku wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     public void act()
     {
-        checkW();
-        checkS();
-        checkD();
-        checkA();
     }
     public void checkW() {
         if (Greenfoot.isKeyDown("W")||Greenfoot.isKeyDown("up")) {
-            setImage(new NarutoB().getImage());
+            setImage(new GokuB().getImage());
             setLocation(getX(),getY()-2);
         }
     }
-    public NarutoL(){
-        
-    }
+
     public void checkS() {
         if (Greenfoot.isKeyDown("S")||Greenfoot.isKeyDown("down")) {
-            setImage(new NarutoF().getImage());
+            setImage(new DisGoku().getImage());
             setLocation(getX(),getY()+2);
         }
     }
 
     public void checkD() {
         if (Greenfoot.isKeyDown("D")||Greenfoot.isKeyDown("right")) {
-            setImage(new NarutoR().getImage());
+            setImage(new GokuR().getImage());
             setLocation(getX()+2,getY());
         }
     }
 
     public void checkA() {
         if (Greenfoot.isKeyDown("A")||Greenfoot.isKeyDown("left")) {
-            setImage(new NarutoL().getImage());
+            setImage(new GokuL().getImage());
             setLocation(getX()-2,getY());
         }
     }

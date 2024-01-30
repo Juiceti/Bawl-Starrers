@@ -19,6 +19,9 @@ public class NarutoB extends Actor
         checkD();
         checkA();
     }
+    public NarutoB(){
+        
+    }
     public void checkW() {
         if (Greenfoot.isKeyDown("W")||Greenfoot.isKeyDown("up")) {
             setImage(new NarutoB().getImage());
