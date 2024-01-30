@@ -1,23 +1,22 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class NarutoL here.
+ * Write a description of class DisNaruto here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class NarutoL extends Actor
+public class DisNaruto extends Actor
 {
     /**
-     * Act - do whatever the NarutoL wants to do. This method is called whenever
+     * Act - do whatever the DisNaruto wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     public void act()
     {
-        checkW();
-        checkS();
-        checkD();
-        checkA();
+    }
+    public DisNaruto(){
+      
     }
     public void checkW() {
         if (Greenfoot.isKeyDown("W")||Greenfoot.isKeyDown("up")) {
@@ -25,12 +24,10 @@ public class NarutoL extends Actor
             setLocation(getX(),getY()-2);
         }
     }
-    public NarutoL(){
-        
-    }
+
     public void checkS() {
         if (Greenfoot.isKeyDown("S")||Greenfoot.isKeyDown("down")) {
-            setImage(new NarutoF().getImage());
+            setImage(new DisNaruto().getImage());
             setLocation(getX(),getY()+2);
         }
     }

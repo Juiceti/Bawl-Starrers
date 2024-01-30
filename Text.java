@@ -13,7 +13,8 @@ public class Text extends Actor {
 
             getWorld().showText("", 400, 325);
             getWorld().showText("", 400, 375);
-            getWorld().showText("HELLO", 400, 375);
+            getWorld().showText("PLAYER 1: MOVEMENT - WASD | SPACE TO SHOOT", 400, 325);
+            getWorld().showText("PLAYER 2: MOVEMENT - ARROW KEYS | ENTER TO SHOOT", 400, 375);
         }
         else {
             // Clear the text
