@@ -8,6 +8,11 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class NarutoF extends Actor
 {
+    private int reload = 50;
+    private boolean up = false;
+    private boolean down = false;
+    private boolean left = false;
+    private boolean right = false;
     /**
      * Act - do whatever the NarutoF wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -18,6 +23,7 @@ public class NarutoF extends Actor
         checkS();
         checkD();
         checkA();
+        shoot();
     }
     public NarutoF(){
       
@@ -26,6 +32,10 @@ public class NarutoF extends Actor
         if (Greenfoot.isKeyDown("W")||Greenfoot.isKeyDown("up")) {
             setImage(new NarutoB().getImage());
             setLocation(getX(),getY()-2);
+            up = true;
+            right = false;
+            left = false;
+            down = false;
         }
     }
 
@@ -33,6 +43,10 @@ public class NarutoF extends Actor
         if (Greenfoot.isKeyDown("S")||Greenfoot.isKeyDown("down")) {
             setImage(new NarutoF().getImage());
             setLocation(getX(),getY()+2);
+            down = true;
+            up = false;
+            right = false;
+            left = false;
         }
     }
 
@@ -40,6 +54,10 @@ public class NarutoF extends Actor
         if (Greenfoot.isKeyDown("D")||Greenfoot.isKeyDown("right")) {
             setImage(new NarutoR().getImage());
             setLocation(getX()+2,getY());
+            right = true;
+            left = false;
+            up = false;
+            down = false;
         }
     }
 
@@ -47,6 +65,39 @@ public class NarutoF extends Actor
         if (Greenfoot.isKeyDown("A")||Greenfoot.isKeyDown("left")) {
             setImage(new NarutoL().getImage());
             setLocation(getX()-2,getY());
+            left = true;
+            right = false;
+            up = false;
+            down = false;
+        }
+    }
+    public void shoot(){
+        if(reload>0){
+            reload--;
+            
+        }
+        
+        if(reload == 0){
+            
+            if(Greenfoot.isKeyDown("space")){
+                if(up){
+                    getWorld().addObject(new shuriken(), getX(), getY()-10);
+                }
+                else if(left){
+                    getWorld().addObject(new shuriken(), getX()-10, getY());
+                }
+                else if(right){
+                    getWorld().addObject(new shuriken(), getX()+10, getY());
+                }
+                else{
+                    getWorld().addObject(new shuriken(), getX(), getY()+10);
+                }
+                
+            
+            
+            reload = 50;
+            
+        }
         }
     }
 }
