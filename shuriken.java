@@ -12,24 +12,25 @@ public class shuriken extends Actor
     public boolean down;
     public boolean left;
     public boolean right;
+    NarutoF Nar=new NarutoF();
     /**
      * Act - do whatever the shuriken wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     public void act()
     {
-        if(up){
+        if(Nar.up){
             while(getY()!=0){
                 setLocation(getX(), getY()+5);
             }
             
         }
-        else if(down){
+        else if(Nar.down){
             while(getY()!=600){
                 setLocation(getX(), getY()-5);
             }
         }
-        else if(right){
+        else if(Nar.right){
             while(getX()!=800){
                 setLocation(getX()+5, getY());
             }

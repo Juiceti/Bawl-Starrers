@@ -9,10 +9,10 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class NarutoF extends Actor
 {
     private int reload = 50;
-    private boolean up = false;
-    private boolean down = false;
-    private boolean left = false;
-    private boolean right = false;
+    public boolean up = false;
+    public boolean down = false;
+    public boolean left = false;
+    public boolean right = false;
     /**
      * Act - do whatever the NarutoF wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
