@@ -18,6 +18,7 @@ public class Map extends World
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(800, 600, 1);
         prepare();
+        add();
     }
     public void act(){
         
@@ -29,5 +30,12 @@ public class Map extends World
         //addObject(pip, 200, 50);
         //LuffyF dog = new LuffyF();
         //addObject(dog, 400, 300);
+    }
+    public void add(){
+        DisCat dis=new DisCat();
+        if(dis.newCat==true){
+            addObject(new CatF(), 100,100);
+            dis.newCat=false;
+        }
     }
 }

@@ -8,7 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class BrawlChoose extends World
 {
-
+    
     /**
      * Constructor for objects of class BrawlChoose.
      * 
@@ -20,13 +20,13 @@ public class BrawlChoose extends World
         act();
         prepareSprites();
         prepareText();
-        addObject(new Test(), 100, 100);
+        //selection();
     }
-    public void act() {
+    /*public void act() {
         if (Greenfoot.mouseClicked(this)) {
         Greenfoot.setWorld(new Map());
         }
-    }
+    }*/
     public void prepareSprites(){
         addObject(new DisCat(), 200, 200);
         addObject(new DisGoku(), 400, 200);
@@ -44,9 +44,9 @@ public class BrawlChoose extends World
         showText("5 - NARUTO", 400, 475);
         showText("6 - SANS", 600, 475);
     }
-    public void test(){
-        Lobby lobby = new Lobby();
-        String newTest = lobby.test;
-        showText(newTest, 400, 300);
+    public void selection(){
+        if(Greenfoot.mouseClicked(DisCat.class)){
+            Greenfoot.setWorld(new Map());
+        }
     }
 }

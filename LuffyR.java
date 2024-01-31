@@ -18,10 +18,6 @@ public class LuffyR extends Actor
         checkW();
         checkD();
         checkA();
-        checkUp();
-        checkDown();
-        checkLeft();
-        checkRight();
     }
     public LuffyR(){
         GreenfootImage image = getImage(); image.scale(image.getWidth() /2, image.getHeight() /2); setImage(image);
@@ -49,30 +45,6 @@ public class LuffyR extends Actor
 
     public void checkA() {
         if (Greenfoot.isKeyDown("A")) {
-            setImage(new LuffyL().getImage());
-            setLocation(getX()-2,getY());
-        }
-    }
-    public void checkUp(){
-        if(Greenfoot.isKeyDown("up")){
-            setImage(new LuffyB().getImage());
-            setLocation(getX(),getY()-2);
-        }
-    }
-    public void checkDown(){
-        if(Greenfoot.isKeyDown("down")){
-            setImage(new LuffyF().getImage());
-            setLocation(getX(),getY()+2);
-        }
-    }
-    public void checkRight(){
-        if(Greenfoot.isKeyDown("right")){
-            setImage(new LuffyR().getImage());
-            setLocation(getX()+2,getY());
-        }
-    }
-    public void checkLeft(){
-        if(Greenfoot.isKeyDown("left")){
             setImage(new LuffyL().getImage());
             setLocation(getX()-2,getY());
         }

@@ -20,28 +20,28 @@ public class GokuR extends Actor
         checkD();
     }
     public void checkW() {
-        if (Greenfoot.isKeyDown("W")||Greenfoot.isKeyDown("up")) {
+        if (Greenfoot.isKeyDown("W")) {
             setImage(new GokuB().getImage());
             setLocation(getX(),getY()-2);
         }
     }
 
     public void checkS() {
-        if (Greenfoot.isKeyDown("S")||Greenfoot.isKeyDown("down")) {
+        if (Greenfoot.isKeyDown("S")) {
             setImage(new GokuF().getImage());
             setLocation(getX(),getY()+2);
         }
     }
 
     public void checkD() {
-        if (Greenfoot.isKeyDown("D")||Greenfoot.isKeyDown("right")) {
+        if (Greenfoot.isKeyDown("D")) {
             setImage(new GokuR().getImage());
             setLocation(getX()+2,getY());
         }
     }
 
     public void checkA() {
-        if (Greenfoot.isKeyDown("A")||Greenfoot.isKeyDown("left")) {
+        if (Greenfoot.isKeyDown("A")) {
             setImage(new GokuL().getImage());
             setLocation(getX()-2,getY());
         }
