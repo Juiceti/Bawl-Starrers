@@ -8,7 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class NarutoF extends Actor
 {
-    private int reload = 50;
+    public int reload = 50;
     public boolean up = false;
     public boolean down = false;
     public boolean left = false;
@@ -25,14 +25,13 @@ public class NarutoF extends Actor
         checkA();
         shoot();
     }
-    public NarutoF(){
-      
-    }
     public void checkW() {
         if (Greenfoot.isKeyDown("W")||Greenfoot.isKeyDown("up")) {
             GreenfootImage image = new GreenfootImage("NarutoB.png");
             // image.scale();
             setImage(image);
+        if (Greenfoot.isKeyDown("W")) {
+            setImage(new NarutoB().getImage());
             setLocation(getX(),getY()-2);
             up = true;
             right = false;
@@ -40,12 +39,14 @@ public class NarutoF extends Actor
             down = false;
         }
     }
-
+    }   
     public void checkS() {
         if (Greenfoot.isKeyDown("S")||Greenfoot.isKeyDown("down")) {
             GreenfootImage image = new GreenfootImage("NarutoF.png");
             // image.scale();
             setImage(image);
+        if (Greenfoot.isKeyDown("S")) {
+            setImage(new NarutoF().getImage());
             setLocation(getX(),getY()+2);
             down = true;
             up = false;
@@ -53,12 +54,16 @@ public class NarutoF extends Actor
             left = false;
         }
     }
-
+    }       
     public void checkD() {
+
         if (Greenfoot.isKeyDown("D")||Greenfoot.isKeyDown("right")) {
             GreenfootImage image = new GreenfootImage("NarutoR.png");
             // image.scale();
             setImage(image);
+
+        if (Greenfoot.isKeyDown("D")) {
+            setImage(new NarutoR().getImage());
             setLocation(getX()+2,getY());
             right = true;
             left = false;
@@ -66,18 +71,21 @@ public class NarutoF extends Actor
             down = false;
         }
     }
-
+    }
     public void checkA() {
         if (Greenfoot.isKeyDown("A")||Greenfoot.isKeyDown("left")) {
             GreenfootImage image = new GreenfootImage("NarutoL.png");
             // image.scale();
             setImage(image);
+        if (Greenfoot.isKeyDown("A")) {
+            setImage(new NarutoL().getImage());
             setLocation(getX()-2,getY());
             left = true;
             right = false;
             up = false;
             down = false;
         }
+    }
     }
     public void shoot(){
         if(reload>0){
@@ -101,13 +109,9 @@ public class NarutoF extends Actor
                 else{
                     getWorld().addObject(Shuriken, getX(), getY());
                 }
-                
+                reload = 50;
             
-            
-            
-            reload = 50;
-            
-        }
+            }
         }
     }
 }
