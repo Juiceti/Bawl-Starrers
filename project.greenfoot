@@ -1,4 +1,5 @@
 #Greenfoot project file
+class.BrawlChoose.image=94a5098ec48793bb0d3209e3f76bb57c.png
 class.CatB.image=Cat_behind.png
 class.CatBArrow.image=Cat_behind.png
 class.CatF.image=Cat_front.png
@@ -102,6 +103,7 @@ dependency11.type=UsesDependency
 dependency110.from=SansL
 dependency110.to=SansR
 dependency110.type=UsesDependency
+<<<<<<< HEAD
 dependency111.from=CatRArrow
 dependency111.to=CatBArrow
 dependency111.type=UsesDependency
@@ -119,6 +121,25 @@ dependency115.to=CatF
 dependency115.type=UsesDependency
 dependency116.from=CatL
 dependency116.to=CatR
+=======
+dependency111.from=CatL
+dependency111.to=CatB
+dependency111.type=UsesDependency
+dependency112.from=CatL
+dependency112.to=CatF
+dependency112.type=UsesDependency
+dependency113.from=CatL
+dependency113.to=CatR
+dependency113.type=UsesDependency
+dependency114.from=CatRArrow
+dependency114.to=CatBArrow
+dependency114.type=UsesDependency
+dependency115.from=CatRArrow
+dependency115.to=CatFArrow
+dependency115.type=UsesDependency
+dependency116.from=CatRArrow
+dependency116.to=CatLArrow
+>>>>>>> a163c589945ec5443cfbe36ba1df11a44e06f332
 dependency116.type=UsesDependency
 dependency117.from=GokuFArrow
 dependency117.to=GokuBArrow
@@ -189,17 +210,30 @@ dependency136.type=UsesDependency
 dependency137.from=CatB
 dependency137.to=CatL
 dependency137.type=UsesDependency
+<<<<<<< HEAD
 dependency138.from=LuffyFArrow
 dependency138.to=LuffyBArrow
 dependency138.type=UsesDependency
 dependency139.from=LuffyFArrow
 dependency139.to=LuffyRArrow
+=======
+dependency138.from=CatFArrow
+dependency138.to=CatBArrow
+dependency138.type=UsesDependency
+dependency139.from=CatFArrow
+dependency139.to=CatRArrow
+>>>>>>> a163c589945ec5443cfbe36ba1df11a44e06f332
 dependency139.type=UsesDependency
 dependency14.from=Lobby
 dependency14.to=IchiF
 dependency14.type=UsesDependency
+<<<<<<< HEAD
 dependency140.from=LuffyFArrow
 dependency140.to=LuffyLArrow
+=======
+dependency140.from=CatFArrow
+dependency140.to=CatLArrow
+>>>>>>> a163c589945ec5443cfbe36ba1df11a44e06f332
 dependency140.type=UsesDependency
 dependency141.from=IchiFArrow
 dependency141.to=IchiBArrow
@@ -210,6 +244,7 @@ dependency142.type=UsesDependency
 dependency143.from=IchiFArrow
 dependency143.to=IchiLArrow
 dependency143.type=UsesDependency
+<<<<<<< HEAD
 dependency144.from=CatFArrow
 dependency144.to=CatBArrow
 dependency144.type=UsesDependency
@@ -218,6 +253,16 @@ dependency145.to=CatRArrow
 dependency145.type=UsesDependency
 dependency146.from=CatFArrow
 dependency146.to=CatLArrow
+=======
+dependency144.from=LuffyFArrow
+dependency144.to=LuffyBArrow
+dependency144.type=UsesDependency
+dependency145.from=LuffyFArrow
+dependency145.to=LuffyRArrow
+dependency145.type=UsesDependency
+dependency146.from=LuffyFArrow
+dependency146.to=LuffyLArrow
+>>>>>>> a163c589945ec5443cfbe36ba1df11a44e06f332
 dependency146.type=UsesDependency
 dependency147.from=CatLArrow
 dependency147.to=CatBArrow
@@ -393,12 +438,18 @@ dependency27.type=UsesDependency
 dependency28.from=NarutoR
 dependency28.to=NarutoB
 dependency28.type=UsesDependency
+<<<<<<< HEAD
 dependency29.from=NarutoR
 dependency29.to=NarutoF
+=======
+dependency29.from=GokuF
+dependency29.to=GokuR
+>>>>>>> a163c589945ec5443cfbe36ba1df11a44e06f332
 dependency29.type=UsesDependency
 dependency3.from=BrawlChoose
 dependency3.to=DisIchi
 dependency3.type=UsesDependency
+<<<<<<< HEAD
 dependency30.from=NarutoR
 dependency30.to=NarutoL
 dependency30.type=UsesDependency
@@ -428,10 +479,42 @@ dependency38.to=GokuR
 dependency38.type=UsesDependency
 dependency39.from=GokuB
 dependency39.to=GokuL
+=======
+dependency30.from=GokuF
+dependency30.to=GokuL
+dependency30.type=UsesDependency
+dependency31.from=NarutoR
+dependency31.to=NarutoB
+dependency31.type=UsesDependency
+dependency32.from=NarutoR
+dependency32.to=NarutoF
+dependency32.type=UsesDependency
+dependency33.from=NarutoR
+dependency33.to=NarutoL
+dependency33.type=UsesDependency
+dependency34.from=GokuB
+dependency34.to=GokuF
+dependency34.type=UsesDependency
+dependency35.from=GokuB
+dependency35.to=GokuR
+dependency35.type=UsesDependency
+dependency36.from=GokuB
+dependency36.to=GokuL
+dependency36.type=UsesDependency
+dependency37.from=LuffyL
+dependency37.to=LuffyB
+dependency37.type=UsesDependency
+dependency38.from=LuffyL
+dependency38.to=LuffyF
+dependency38.type=UsesDependency
+dependency39.from=LuffyL
+dependency39.to=LuffyR
+>>>>>>> a163c589945ec5443cfbe36ba1df11a44e06f332
 dependency39.type=UsesDependency
 dependency4.from=BrawlChoose
 dependency4.to=DisLuffy
 dependency4.type=UsesDependency
+<<<<<<< HEAD
 dependency40.from=SansBArrow
 dependency40.to=SansFArrow
 dependency40.type=UsesDependency
@@ -440,6 +523,16 @@ dependency41.to=SansRArrow
 dependency41.type=UsesDependency
 dependency42.from=SansBArrow
 dependency42.to=SansLArrow
+=======
+dependency40.from=DisCat
+dependency40.to=CatB
+dependency40.type=UsesDependency
+dependency41.from=DisCat
+dependency41.to=CatR
+dependency41.type=UsesDependency
+dependency42.from=DisCat
+dependency42.to=CatL
+>>>>>>> a163c589945ec5443cfbe36ba1df11a44e06f332
 dependency42.type=UsesDependency
 dependency43.from=DisCat
 dependency43.to=CatB
@@ -447,6 +540,7 @@ dependency43.type=UsesDependency
 dependency44.from=DisCat
 dependency44.to=CatR
 dependency44.type=UsesDependency
+<<<<<<< HEAD
 dependency45.from=DisCat
 dependency45.to=CatL
 dependency45.type=UsesDependency
@@ -455,6 +549,16 @@ dependency46.to=Map
 dependency46.type=UsesDependency
 dependency47.from=DisCat
 dependency47.to=CatF
+=======
+dependency45.from=SansBArrow
+dependency45.to=SansFArrow
+dependency45.type=UsesDependency
+dependency46.from=SansBArrow
+dependency46.to=SansRArrow
+dependency46.type=UsesDependency
+dependency47.from=SansBArrow
+dependency47.to=SansLArrow
+>>>>>>> a163c589945ec5443cfbe36ba1df11a44e06f332
 dependency47.type=UsesDependency
 dependency48.from=GokuBArrow
 dependency48.to=GokuFArrow
@@ -513,6 +617,7 @@ dependency63.type=UsesDependency
 dependency64.from=LuffyLArrow
 dependency64.to=LuffyRArrow
 dependency64.type=UsesDependency
+<<<<<<< HEAD
 dependency65.from=NarutoL
 dependency65.to=NarutoB
 dependency65.type=UsesDependency
@@ -521,18 +626,28 @@ dependency66.to=NarutoF
 dependency66.type=UsesDependency
 dependency67.from=NarutoL
 dependency67.to=NarutoR
+=======
+dependency65.from=LuffyR
+dependency65.to=LuffyB
+dependency65.type=UsesDependency
+dependency66.from=LuffyR
+dependency66.to=LuffyF
+dependency66.type=UsesDependency
+dependency67.from=LuffyR
+dependency67.to=LuffyL
+>>>>>>> a163c589945ec5443cfbe36ba1df11a44e06f332
 dependency67.type=UsesDependency
-dependency68.from=LuffyR
-dependency68.to=LuffyB
+dependency68.from=NarutoL
+dependency68.to=NarutoB
 dependency68.type=UsesDependency
-dependency69.from=LuffyR
-dependency69.to=LuffyF
+dependency69.from=NarutoL
+dependency69.to=NarutoF
 dependency69.type=UsesDependency
 dependency7.from=BrawlChoose
 dependency7.to=Map
 dependency7.type=UsesDependency
-dependency70.from=LuffyR
-dependency70.to=LuffyL
+dependency70.from=NarutoL
+dependency70.to=NarutoR
 dependency70.type=UsesDependency
 dependency71.from=shuriken
 dependency71.to=NarutoF
@@ -573,6 +688,7 @@ dependency81.type=UsesDependency
 dependency82.from=NarutoB
 dependency82.to=NarutoL
 dependency82.type=UsesDependency
+<<<<<<< HEAD
 dependency83.from=NarutoF
 dependency83.to=NarutoB
 dependency83.type=UsesDependency
@@ -593,6 +709,28 @@ dependency88.to=GokuF
 dependency88.type=UsesDependency
 dependency89.from=GokuR
 dependency89.to=GokuL
+=======
+dependency83.from=GokuR
+dependency83.to=GokuB
+dependency83.type=UsesDependency
+dependency84.from=GokuR
+dependency84.to=GokuF
+dependency84.type=UsesDependency
+dependency85.from=GokuR
+dependency85.to=GokuL
+dependency85.type=UsesDependency
+dependency86.from=NarutoF
+dependency86.to=NarutoB
+dependency86.type=UsesDependency
+dependency87.from=NarutoF
+dependency87.to=NarutoR
+dependency87.type=UsesDependency
+dependency88.from=NarutoF
+dependency88.to=NarutoL
+dependency88.type=UsesDependency
+dependency89.from=NarutoF
+dependency89.to=shuriken
+>>>>>>> a163c589945ec5443cfbe36ba1df11a44e06f332
 dependency89.type=UsesDependency
 dependency9.from=Map
 dependency9.to=CatF
@@ -633,7 +771,11 @@ editor.fx.0.x=359
 editor.fx.0.y=25
 height=830
 package.numDependencies=189
+<<<<<<< HEAD
 package.numTargets=68
+=======
+package.numTargets=65
+>>>>>>> a163c589945ec5443cfbe36ba1df11a44e06f332
 project.charset=UTF-8
 publish.hasSource=false
 publish.locked=true
@@ -644,7 +786,7 @@ publish.title=
 publish.url=
 readme.height=60
 readme.name=@README
-readme.width=48
+readme.width=49
 readme.x=10
 readme.y=10
 simulation.speed=48
@@ -656,7 +798,11 @@ target1.width=120
 target1.x=0
 target1.y=0
 target10.height=70
+<<<<<<< HEAD
 target10.name=DisCat
+=======
+target10.name=SansBArrow
+>>>>>>> a163c589945ec5443cfbe36ba1df11a44e06f332
 target10.showInterface=false
 target10.type=ClassTarget
 target10.width=120
@@ -677,14 +823,22 @@ target12.width=120
 target12.x=0
 target12.y=0
 target13.height=70
+<<<<<<< HEAD
 target13.name=logo
+=======
+target13.name=BrawlChoose
+>>>>>>> a163c589945ec5443cfbe36ba1df11a44e06f332
 target13.showInterface=false
 target13.type=ClassTarget
 target13.width=120
 target13.x=0
 target13.y=0
 target14.height=70
+<<<<<<< HEAD
 target14.name=BrawlChoose
+=======
+target14.name=Load
+>>>>>>> a163c589945ec5443cfbe36ba1df11a44e06f332
 target14.showInterface=false
 target14.type=ClassTarget
 target14.width=120
@@ -705,21 +859,33 @@ target16.width=120
 target16.x=0
 target16.y=0
 target17.height=70
+<<<<<<< HEAD
 target17.name=DisLuffy
+=======
+target17.name=method
+>>>>>>> a163c589945ec5443cfbe36ba1df11a44e06f332
 target17.showInterface=false
 target17.type=ClassTarget
 target17.width=120
 target17.x=0
 target17.y=0
 target18.height=70
+<<<<<<< HEAD
 target18.name=method
+=======
+target18.name=DisGoku
+>>>>>>> a163c589945ec5443cfbe36ba1df11a44e06f332
 target18.showInterface=false
 target18.type=ClassTarget
 target18.width=120
 target18.x=0
 target18.y=0
 target19.height=70
+<<<<<<< HEAD
 target19.name=DisGoku
+=======
+target19.name=NarutoFArrow
+>>>>>>> a163c589945ec5443cfbe36ba1df11a44e06f332
 target19.showInterface=false
 target19.type=ClassTarget
 target19.width=120
@@ -733,14 +899,22 @@ target2.width=120
 target2.x=0
 target2.y=0
 target20.height=70
+<<<<<<< HEAD
 target20.name=NarutoFArrow
+=======
+target20.name=LuffyLArrow
+>>>>>>> a163c589945ec5443cfbe36ba1df11a44e06f332
 target20.showInterface=false
 target20.type=ClassTarget
 target20.width=120
 target20.x=0
 target20.y=0
 target21.height=70
+<<<<<<< HEAD
 target21.name=LuffyLArrow
+=======
+target21.name=LuffyR
+>>>>>>> a163c589945ec5443cfbe36ba1df11a44e06f332
 target21.showInterface=false
 target21.type=ClassTarget
 target21.width=120
@@ -754,182 +928,286 @@ target22.width=120
 target22.x=0
 target22.y=0
 target23.height=70
+<<<<<<< HEAD
 target23.name=LuffyR
+=======
+target23.name=shuriken
+>>>>>>> a163c589945ec5443cfbe36ba1df11a44e06f332
 target23.showInterface=false
 target23.type=ClassTarget
 target23.width=120
 target23.x=0
 target23.y=0
 target24.height=70
+<<<<<<< HEAD
 target24.name=shuriken
+=======
+target24.name=NarutoLArrow
+>>>>>>> a163c589945ec5443cfbe36ba1df11a44e06f332
 target24.showInterface=false
 target24.type=ClassTarget
 target24.width=120
 target24.x=0
 target24.y=0
 target25.height=70
+<<<<<<< HEAD
 target25.name=background
+=======
+target25.name=NarutoB
+>>>>>>> a163c589945ec5443cfbe36ba1df11a44e06f332
 target25.showInterface=false
 target25.type=ClassTarget
 target25.width=120
 target25.x=0
 target25.y=0
 target26.height=70
+<<<<<<< HEAD
 target26.name=NarutoLArrow
+=======
+target26.name=GokuR
+>>>>>>> a163c589945ec5443cfbe36ba1df11a44e06f332
 target26.showInterface=false
 target26.type=ClassTarget
 target26.width=120
 target26.x=0
 target26.y=0
 target27.height=70
+<<<<<<< HEAD
 target27.name=NarutoB
+=======
+target27.name=NarutoF
+>>>>>>> a163c589945ec5443cfbe36ba1df11a44e06f332
 target27.showInterface=false
 target27.type=ClassTarget
 target27.width=120
 target27.x=0
 target27.y=0
 target28.height=70
+<<<<<<< HEAD
 target28.name=NarutoF
+=======
+target28.name=LuffyRArrow
+>>>>>>> a163c589945ec5443cfbe36ba1df11a44e06f332
 target28.showInterface=false
 target28.type=ClassTarget
 target28.width=120
 target28.x=0
 target28.y=0
 target29.height=70
+<<<<<<< HEAD
 target29.name=GokuR
+=======
+target29.name=Map
+>>>>>>> a163c589945ec5443cfbe36ba1df11a44e06f332
 target29.showInterface=false
 target29.type=ClassTarget
 target29.width=120
 target29.x=0
 target29.y=0
 target3.height=70
+<<<<<<< HEAD
 target3.name=LuffyF
+=======
+target3.name=GokuL
+>>>>>>> a163c589945ec5443cfbe36ba1df11a44e06f332
 target3.showInterface=false
 target3.type=ClassTarget
 target3.width=120
 target3.x=0
 target3.y=0
 target30.height=70
+<<<<<<< HEAD
 target30.name=Map
+=======
+target30.name=NarutoRArrow
+>>>>>>> a163c589945ec5443cfbe36ba1df11a44e06f332
 target30.showInterface=false
 target30.type=ClassTarget
 target30.width=120
 target30.x=0
 target30.y=0
 target31.height=70
+<<<<<<< HEAD
 target31.name=LuffyRArrow
+=======
+target31.name=SansR
+>>>>>>> a163c589945ec5443cfbe36ba1df11a44e06f332
 target31.showInterface=false
 target31.type=ClassTarget
 target31.width=120
 target31.x=0
 target31.y=0
 target32.height=70
+<<<<<<< HEAD
 target32.name=NarutoRArrow
+=======
+target32.name=IchiL
+>>>>>>> a163c589945ec5443cfbe36ba1df11a44e06f332
 target32.showInterface=false
 target32.type=ClassTarget
 target32.width=120
 target32.x=0
 target32.y=0
 target33.height=70
+<<<<<<< HEAD
 target33.name=SansR
+=======
+target33.name=CatR
+>>>>>>> a163c589945ec5443cfbe36ba1df11a44e06f332
 target33.showInterface=false
 target33.type=ClassTarget
 target33.width=120
 target33.x=0
 target33.y=0
 target34.height=70
+<<<<<<< HEAD
 target34.name=IchiL
+=======
+target34.name=IchiR
+>>>>>>> a163c589945ec5443cfbe36ba1df11a44e06f332
 target34.showInterface=false
 target34.type=ClassTarget
 target34.width=120
 target34.x=0
 target34.y=0
 target35.height=70
+<<<<<<< HEAD
 target35.name=CatR
+=======
+target35.name=SansL
+>>>>>>> a163c589945ec5443cfbe36ba1df11a44e06f332
 target35.showInterface=false
 target35.type=ClassTarget
 target35.width=120
 target35.x=0
 target35.y=0
 target36.height=70
+<<<<<<< HEAD
 target36.name=IchiR
+=======
+target36.name=CatL
+>>>>>>> a163c589945ec5443cfbe36ba1df11a44e06f332
 target36.showInterface=false
 target36.type=ClassTarget
 target36.width=120
 target36.x=0
 target36.y=0
 target37.height=70
+<<<<<<< HEAD
 target37.name=SansL
+=======
+target37.name=CatRArrow
+>>>>>>> a163c589945ec5443cfbe36ba1df11a44e06f332
 target37.showInterface=false
 target37.type=ClassTarget
 target37.width=120
 target37.x=0
 target37.y=0
 target38.height=70
+<<<<<<< HEAD
 target38.name=CatRArrow
+=======
+target38.name=GokuFArrow
+>>>>>>> a163c589945ec5443cfbe36ba1df11a44e06f332
 target38.showInterface=false
 target38.type=ClassTarget
 target38.width=120
 target38.x=0
 target38.y=0
 target39.height=70
+<<<<<<< HEAD
 target39.name=CatL
+=======
+target39.name=SansF
+>>>>>>> a163c589945ec5443cfbe36ba1df11a44e06f332
 target39.showInterface=false
 target39.type=ClassTarget
 target39.width=120
 target39.x=0
 target39.y=0
 target4.height=70
+<<<<<<< HEAD
 target4.name=GokuL
+=======
+target4.name=LuffyF
+>>>>>>> a163c589945ec5443cfbe36ba1df11a44e06f332
 target4.showInterface=false
 target4.type=ClassTarget
 target4.width=120
 target4.x=0
 target4.y=0
 target40.height=70
+<<<<<<< HEAD
 target40.name=GokuFArrow
+=======
+target40.name=CatF
+>>>>>>> a163c589945ec5443cfbe36ba1df11a44e06f332
 target40.showInterface=false
 target40.type=ClassTarget
 target40.width=120
 target40.x=0
 target40.y=0
 target41.height=70
+<<<<<<< HEAD
 target41.name=SansF
+=======
+target41.name=SansB
+>>>>>>> a163c589945ec5443cfbe36ba1df11a44e06f332
 target41.showInterface=false
 target41.type=ClassTarget
 target41.width=120
 target41.x=0
 target41.y=0
 target42.height=70
+<<<<<<< HEAD
 target42.name=CatF
+=======
+target42.name=GokuRArrow
+>>>>>>> a163c589945ec5443cfbe36ba1df11a44e06f332
 target42.showInterface=false
 target42.type=ClassTarget
 target42.width=120
 target42.x=0
 target42.y=0
 target43.height=70
+<<<<<<< HEAD
 target43.name=SansB
+=======
+target43.name=IchiLArrow
+>>>>>>> a163c589945ec5443cfbe36ba1df11a44e06f332
 target43.showInterface=false
 target43.type=ClassTarget
 target43.width=120
 target43.x=0
 target43.y=0
 target44.height=70
+<<<<<<< HEAD
 target44.name=GokuRArrow
+=======
+target44.name=CatB
+>>>>>>> a163c589945ec5443cfbe36ba1df11a44e06f332
 target44.showInterface=false
 target44.type=ClassTarget
 target44.width=120
 target44.x=0
 target44.y=0
 target45.height=70
+<<<<<<< HEAD
 target45.name=IchiLArrow
+=======
+target45.name=CatFArrow
+>>>>>>> a163c589945ec5443cfbe36ba1df11a44e06f332
 target45.showInterface=false
 target45.type=ClassTarget
 target45.width=120
 target45.x=0
 target45.y=0
 target46.height=70
+<<<<<<< HEAD
 target46.name=CatB
+=======
+target46.name=IchiFArrow
+>>>>>>> a163c589945ec5443cfbe36ba1df11a44e06f332
 target46.showInterface=false
 target46.type=ClassTarget
 target46.width=120
@@ -943,14 +1221,22 @@ target47.width=120
 target47.x=0
 target47.y=0
 target48.height=70
+<<<<<<< HEAD
 target48.name=IchiFArrow
+=======
+target48.name=CatLArrow
+>>>>>>> a163c589945ec5443cfbe36ba1df11a44e06f332
 target48.showInterface=false
 target48.type=ClassTarget
 target48.width=120
 target48.x=0
 target48.y=0
 target49.height=70
+<<<<<<< HEAD
 target49.name=CatFArrow
+=======
+target49.name=GokuLArrow
+>>>>>>> a163c589945ec5443cfbe36ba1df11a44e06f332
 target49.showInterface=false
 target49.type=ClassTarget
 target49.width=120
@@ -964,21 +1250,33 @@ target5.width=120
 target5.x=0
 target5.y=0
 target50.height=70
+<<<<<<< HEAD
 target50.name=CatLArrow
+=======
+target50.name=IchiB
+>>>>>>> a163c589945ec5443cfbe36ba1df11a44e06f332
 target50.showInterface=false
 target50.type=ClassTarget
 target50.width=120
 target50.x=0
 target50.y=0
 target51.height=70
+<<<<<<< HEAD
 target51.name=GokuLArrow
+=======
+target51.name=Lobby
+>>>>>>> a163c589945ec5443cfbe36ba1df11a44e06f332
 target51.showInterface=false
 target51.type=ClassTarget
 target51.width=120
 target51.x=0
 target51.y=0
 target52.height=70
+<<<<<<< HEAD
 target52.name=Lobby
+=======
+target52.name=IchiRArrow
+>>>>>>> a163c589945ec5443cfbe36ba1df11a44e06f332
 target52.showInterface=false
 target52.type=ClassTarget
 target52.width=120
@@ -992,21 +1290,33 @@ target53.width=120
 target53.x=0
 target53.y=0
 target54.height=70
+<<<<<<< HEAD
 target54.name=IchiRArrow
+=======
+target54.name=IchiF
+>>>>>>> a163c589945ec5443cfbe36ba1df11a44e06f332
 target54.showInterface=false
 target54.type=ClassTarget
 target54.width=120
 target54.x=0
 target54.y=0
 target55.height=70
+<<<<<<< HEAD
 target55.name=IchiBArrow
+=======
+target55.name=DisIchi
+>>>>>>> a163c589945ec5443cfbe36ba1df11a44e06f332
 target55.showInterface=false
 target55.type=ClassTarget
 target55.width=120
 target55.x=0
 target55.y=0
 target56.height=70
+<<<<<<< HEAD
 target56.name=IchiF
+=======
+target56.name=SansRArrow
+>>>>>>> a163c589945ec5443cfbe36ba1df11a44e06f332
 target56.showInterface=false
 target56.type=ClassTarget
 target56.width=120
@@ -1020,14 +1330,22 @@ target57.width=120
 target57.x=0
 target57.y=0
 target58.height=70
+<<<<<<< HEAD
 target58.name=SansRArrow
+=======
+target58.name=Text
+>>>>>>> a163c589945ec5443cfbe36ba1df11a44e06f332
 target58.showInterface=false
 target58.type=ClassTarget
 target58.width=120
 target58.x=0
 target58.y=0
 target59.height=70
+<<<<<<< HEAD
 target59.name=Text
+=======
+target59.name=Poco
+>>>>>>> a163c589945ec5443cfbe36ba1df11a44e06f332
 target59.showInterface=false
 target59.type=ClassTarget
 target59.width=120
@@ -1041,47 +1359,72 @@ target6.width=120
 target6.x=0
 target6.y=0
 target60.height=70
+<<<<<<< HEAD
 target60.name=CatBArrow
+=======
+target60.name=NarutoBArrow
+>>>>>>> a163c589945ec5443cfbe36ba1df11a44e06f332
 target60.showInterface=false
 target60.type=ClassTarget
 target60.width=120
 target60.x=0
 target60.y=0
 target61.height=70
+<<<<<<< HEAD
 target61.name=Poco
+=======
+target61.name=DisSans
+>>>>>>> a163c589945ec5443cfbe36ba1df11a44e06f332
 target61.showInterface=false
 target61.type=ClassTarget
 target61.width=120
 target61.x=0
 target61.y=0
 target62.height=70
+<<<<<<< HEAD
 target62.name=NarutoBArrow
+=======
+target62.name=SansLArrow
+>>>>>>> a163c589945ec5443cfbe36ba1df11a44e06f332
 target62.showInterface=false
 target62.type=ClassTarget
 target62.width=120
 target62.x=0
 target62.y=0
 target63.height=70
+<<<<<<< HEAD
 target63.name=DisSans
+=======
+target63.name=LuffyBArrow
+>>>>>>> a163c589945ec5443cfbe36ba1df11a44e06f332
 target63.showInterface=false
 target63.type=ClassTarget
 target63.width=120
 target63.x=0
 target63.y=0
 target64.height=70
+<<<<<<< HEAD
 target64.name=SansLArrow
+=======
+target64.name=Piper
+>>>>>>> a163c589945ec5443cfbe36ba1df11a44e06f332
 target64.showInterface=false
 target64.type=ClassTarget
 target64.width=120
 target64.x=0
 target64.y=0
 target65.height=70
+<<<<<<< HEAD
 target65.name=LuffyBArrow
+=======
+target65.name=SansFArrow
+>>>>>>> a163c589945ec5443cfbe36ba1df11a44e06f332
 target65.showInterface=false
 target65.type=ClassTarget
 target65.width=120
 target65.x=0
 target65.y=0
+<<<<<<< HEAD
 target66.height=70
 target66.name=Piper
 target66.showInterface=false
@@ -1105,27 +1448,46 @@ target68.x=0
 target68.y=0
 target7.height=70
 target7.name=LuffyL
+=======
+target7.height=70
+target7.name=GokuB
+>>>>>>> a163c589945ec5443cfbe36ba1df11a44e06f332
 target7.showInterface=false
 target7.type=ClassTarget
 target7.width=120
 target7.x=0
 target7.y=0
 target8.height=70
+<<<<<<< HEAD
 target8.name=GokuB
+=======
+target8.name=LuffyL
+>>>>>>> a163c589945ec5443cfbe36ba1df11a44e06f332
 target8.showInterface=false
 target8.type=ClassTarget
 target8.width=120
 target8.x=0
 target8.y=0
 target9.height=70
+<<<<<<< HEAD
 target9.name=SansBArrow
+=======
+target9.name=DisCat
+>>>>>>> a163c589945ec5443cfbe36ba1df11a44e06f332
 target9.showInterface=false
 target9.type=ClassTarget
 target9.width=120
 target9.x=0
 target9.y=0
 version=3.1.0
+<<<<<<< HEAD
 width=1440
 world.lastInstantiated=BrawlChoose
 xPosition=0
 yPosition=70
+=======
+width=1550
+world.lastInstantiated=Lobby
+xPosition=0
+yPosition=0
+>>>>>>> a163c589945ec5443cfbe36ba1df11a44e06f332

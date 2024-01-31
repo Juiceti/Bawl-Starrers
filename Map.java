@@ -8,7 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Map extends World
 {
-    
+    public int playerCounter = 0;
     /**
      * Constructor for objects of class Map.
      * 
@@ -34,8 +34,18 @@ public class Map extends World
     public void add(){
         DisCat dis=new DisCat();
         if(dis.newCat==true){
-            addObject(new CatF(), 100,100);
-            dis.newCat=false;
+            if(playerCounter == 0){
+                addObject(new CatF(), 100,100);
+                playerCounter++;
+                dis.newCat=false;
+            }
+            else{
+                addObject(new CatFArrow(), 100, 500);
+                dis.newCat=false;
+            }
         }
+    }
+    public int getPlayer(){
+        return playerCounter;
     }
 }
