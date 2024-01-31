@@ -97,6 +97,7 @@ public class NarutoF extends Actor
             
             if(Greenfoot.isKeyDown("space")){
                 shuriken Shuriken = new shuriken();
+                
                 if(up){
                     getWorld().addObject(Shuriken, getX(), getY());
                 }
@@ -112,6 +113,7 @@ public class NarutoF extends Actor
                 reload = 50;
             
             }
+            
         }
     }
 }

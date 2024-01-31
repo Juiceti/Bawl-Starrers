@@ -27,9 +27,24 @@ public class shuriken extends Actor{
     public shuriken() {
         GreenfootImage image = getImage();
         image.scale(image.getWidth() /3, image.getHeight() /3); setImage(image);
-        
+        if(newUp){
+            direction = 1;
+        }
     }
     public void act(){
+        if(isTouching(NarutoF.class)){
+            setLocation(getX(), getY()-5); 
+        }
+        if(isTouching(NarutoB.class)){
+            setLocation(getX(), getY()+5);
+        }
+        if(isTouching(NarutoL.class)){
+            setLocation(getX()-5, getY());
+        }
+        if(isTouching(NarutoR.class)){
+            setLocation(getX()+5, getY());
+        }
+        
         
         
         imashootmyself();
@@ -48,6 +63,7 @@ public class shuriken extends Actor{
         }
     }
     public void imashootmyself(){
+        
         if(isTouching(NarutoF.class)){
             while(getY()<20 || getY()>580 || getX()<20 || getX()>780){
                 setLocation(getX(), getY()+5); 
@@ -75,9 +91,10 @@ public class shuriken extends Actor{
             
             
         }
+        }
+        
     }
     
         
 
-}
-    
+
