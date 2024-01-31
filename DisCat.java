@@ -8,13 +8,14 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class DisCat extends Actor
 {
+    public boolean newCat=true;
     /**
      * Act - do whatever the DisCat wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     public void act()
     {
-        
+        selection();
     }
     public DisCat(){
         GreenfootImage image = getImage(); image.scale(image.getWidth() /2, image.getHeight() /2); setImage(image);
@@ -43,6 +44,13 @@ public class DisCat extends Actor
         if (Greenfoot.isKeyDown("A")||Greenfoot.isKeyDown("left")) {
             setImage(new CatL().getImage());
             setLocation(getX()-2,getY());
+        }
+    }
+    public void selection(){
+        if(Greenfoot.mouseClicked(this)){
+            Greenfoot.setWorld(new Map());
+            getWorld().addObject(new CatF(),100,100);
+            newCat=true;
         }
     }
 }
