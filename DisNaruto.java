@@ -20,28 +20,36 @@ public class DisNaruto extends Actor
     }
     public void checkW() {
         if (Greenfoot.isKeyDown("W")||Greenfoot.isKeyDown("up")) {
-            setImage(new NarutoB().getImage());
+            GreenfootImage image = new GreenfootImage("NarutoB.png");
+            // image.scale();
+            setImage(image);
             setLocation(getX(),getY()-2);
         }
     }
 
     public void checkS() {
         if (Greenfoot.isKeyDown("S")||Greenfoot.isKeyDown("down")) {
-            setImage(new DisNaruto().getImage());
+            GreenfootImage image = new GreenfootImage("NarutoF.png");
+            // image.scale();
+            setImage(image);
             setLocation(getX(),getY()+2);
         }
     }
 
     public void checkD() {
         if (Greenfoot.isKeyDown("D")||Greenfoot.isKeyDown("right")) {
-            setImage(new NarutoR().getImage());
+            GreenfootImage image = new GreenfootImage("NarutoR.png");
+            // image.scale();
+            setImage(image);
             setLocation(getX()+2,getY());
         }
     }
 
     public void checkA() {
         if (Greenfoot.isKeyDown("A")||Greenfoot.isKeyDown("left")) {
-            setImage(new NarutoL().getImage());
+            GreenfootImage image = new GreenfootImage("NarutoL.png");
+            // image.scale();
+            setImage(image);
             setLocation(getX()-2,getY());
         }
     }
