@@ -13,6 +13,7 @@ public class NarutoF extends Actor
     public boolean down = false;
     public boolean left = false;
     public boolean right = false;
+    public static int direction;
     /**
      * Act - do whatever the NarutoF wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -30,14 +31,9 @@ public class NarutoF extends Actor
             GreenfootImage image = new GreenfootImage("NarutoB.png");
             // image.scale();
             setImage(image);
-        if (Greenfoot.isKeyDown("W")) {
-            setImage(new NarutoB().getImage());
-            setLocation(getX(),getY()-2);
-            up = true;
-            right = false;
-            left = false;
-            down = false;
-        }
+            setLocation(getX(), getY()-2);
+        
+        direction = 0;
     }
     }   
     public void checkS() {
@@ -45,14 +41,9 @@ public class NarutoF extends Actor
             GreenfootImage image = new GreenfootImage("NarutoF.png");
             // image.scale();
             setImage(image);
-        if (Greenfoot.isKeyDown("S")) {
-            setImage(new NarutoF().getImage());
-            setLocation(getX(),getY()+2);
-            down = true;
-            up = false;
-            right = false;
-            left = false;
-        }
+            setLocation(getX(), getY()+2);
+            direction = 1;
+            
     }
     }       
     public void checkD() {
@@ -61,15 +52,8 @@ public class NarutoF extends Actor
             GreenfootImage image = new GreenfootImage("NarutoR.png");
             // image.scale();
             setImage(image);
-
-        if (Greenfoot.isKeyDown("D")) {
-            setImage(new NarutoR().getImage());
-            setLocation(getX()+2,getY());
-            right = true;
-            left = false;
-            up = false;
-            down = false;
-        }
+            setLocation(getX()+2, getY());
+            direction = 2;
     }
     }
     public void checkA() {
@@ -77,14 +61,8 @@ public class NarutoF extends Actor
             GreenfootImage image = new GreenfootImage("NarutoL.png");
             // image.scale();
             setImage(image);
-        if (Greenfoot.isKeyDown("A")) {
-            setImage(new NarutoL().getImage());
-            setLocation(getX()-2,getY());
-            left = true;
-            right = false;
-            up = false;
-            down = false;
-        }
+            setLocation(getX()-2, getY());
+            direction = 3;
     }
     }
     public void shoot(){
@@ -115,5 +93,8 @@ public class NarutoF extends Actor
             }
             
         }
+    }
+    public int getDirection(){
+        return direction;
     }
 }
