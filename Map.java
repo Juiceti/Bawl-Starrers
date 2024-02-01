@@ -28,13 +28,13 @@ public class Map extends World
         showPlayer();
         act();
         checkCat();
-        //DisCat myActor = new DisCat();
-        //addObject(myActor, 300, 200);
+        
     }
     public void act(){
         
     }
     public void prepare(){
+<<<<<<< HEAD
         
     }
     public void add(){
@@ -64,6 +64,15 @@ public class Map extends World
     }
     public int getPlayer(){
         return playerCounter;
+=======
+        //SansF san = new SansF();
+        addObject(new NarutoF(), 400, 100);
+        //addObject(san, 400, 550);
+        //Piper pip = new Piper();
+        //addObject(pip, 200, 50);
+        LuffyF dog = new LuffyF();
+        addObject(dog, 400, 300);
+>>>>>>> c726eb41bb0a46e0b7eb20b2e1626c3179682c89
     }
     public void checkCat(){
         DisCat actor = new DisCat();
