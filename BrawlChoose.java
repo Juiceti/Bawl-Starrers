@@ -34,12 +34,12 @@ public class BrawlChoose extends World
     }
     public void prepareText(){
         showText("PLAYER " + playerCounter + " CHOOSE YOUR CHARACTER", 400, 75); 
-        showText("1 - KIT", 200, 275);
-        showText("2 - GOKU", 400, 275);
-        showText("3 - ICHIGO", 600, 275);
-        showText("4 - LUFFY", 200, 475);
-        showText("5 - NARUTO", 400, 475);
-        showText("6 - SANS", 600, 475);
+        showText("KIT", 200, 275);
+        showText("GOKU", 400, 275);
+        showText("ICHIGO", 600, 275);
+        showText("LUFFY", 200, 475);
+        showText("NARUTO", 400, 475);
+        showText("SANS", 600, 475);
     }
     public void selection(){
         if(playerCounter == 3){
@@ -52,4 +52,5 @@ public class BrawlChoose extends World
     public void setPlayer(int newPlayer){
         playerCounter = newPlayer;
     }
+    
 }
