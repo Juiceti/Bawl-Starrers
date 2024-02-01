@@ -13,6 +13,7 @@ public class Map extends World
     public int health_player2;
     public String player1 = "";
     public String player2 = "";
+
     /**
      * Constructor for objects of class Map.
      * 
@@ -25,6 +26,10 @@ public class Map extends World
         add();
         showHealth();
         showPlayer();
+        act();
+        checkCat();
+        //DisCat myActor = new DisCat();
+        //addObject(myActor, 300, 200);
     }
     public void act(){
         
@@ -59,5 +64,12 @@ public class Map extends World
     }
     public int getPlayer(){
         return playerCounter;
+    }
+    public void checkCat(){
+        DisCat actor = new DisCat();
+        boolean heyNowBrownCow = actor.getCat();
+        if(heyNowBrownCow){
+            addObject(new CatF(), 400, 100);
+        }
     }
 }

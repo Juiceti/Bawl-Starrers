@@ -8,7 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class DisCat extends Actor
 {
-    public boolean newCat=true;
+    public boolean newCat=false;
     /**
      * Act - do whatever the DisCat wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -56,8 +56,12 @@ public class DisCat extends Actor
             int currentPlayer = world.getPlayer();
             world.setPlayer(currentPlayer + 1);
             
+            newCat = true;
             //Greenfoot.setWorld(new Lobby());
             //getWorld().addObject(new CatF(),100,100);
         }
+    }
+    public boolean getCat(){
+        return newCat;
     }
 }

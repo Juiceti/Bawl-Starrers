@@ -8,6 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class DisLuffy extends Actor
 {
+    public boolean newLuffy = false;
     /**
      * Act - do whatever the DisLuffy wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -31,6 +32,7 @@ public class DisLuffy extends Actor
             else if(world1.playerCounter == 3){
                 world1.player2 = "Luffy";
             }
+            newLuffy = true;
             //Greenfoot.setWorld(new Lobby());
             //getWorld().addObject(new LuffyF(),100,100);
         }

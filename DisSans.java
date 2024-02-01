@@ -8,6 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class DisSans extends Actor
 {
+    public boolean newSans = false;
     /**
      * Act - do whatever the DisSans wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -55,17 +56,12 @@ public class DisSans extends Actor
     public void selection(){
         if(Greenfoot.mouseClicked(this)){
             BrawlChoose world = (BrawlChoose) getWorld();
-            Map world1 = (Map) getWorld();
             int currentPlayer = world.getPlayer();
             world.setPlayer(currentPlayer + 1);
-            if(world1.playerCounter == 2){
-                world1.player1 = "Sans";
-            }
-            else if(world1.playerCounter == 3){
-                world1.player2 = "Sans";
-            }
+            newSans = true;
             //Greenfoot.setWorld(new Lobby());
-            //getWorld().addObject(new SansF(),100,100);
+            //getWorld().addObject(new LuffyF(),100,100);
         }
     }
+    
 }
