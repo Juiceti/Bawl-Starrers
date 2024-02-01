@@ -14,6 +14,7 @@ public class DisGoku extends Actor
      */
     public void act()
     {
+        selection();
     }
     public void checkW() {
         if (Greenfoot.isKeyDown("W")||Greenfoot.isKeyDown("up")) {
@@ -40,6 +41,15 @@ public class DisGoku extends Actor
         if (Greenfoot.isKeyDown("A")||Greenfoot.isKeyDown("left")) {
             setImage(new GokuL().getImage());
             setLocation(getX()-2,getY());
+        }
+    }
+    public void selection(){
+        if(Greenfoot.mouseClicked(this)){
+            BrawlChoose world = (BrawlChoose) getWorld();
+            int currentPlayer = world.getPlayer();
+            world.setPlayer(currentPlayer + 1);
+            //Greenfoot.setWorld(new Lobby());
+            //getWorld().addObject(new GokuF(),100,100);
         }
     }
 }

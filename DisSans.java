@@ -14,6 +14,7 @@ public class DisSans extends Actor
      */
     public void act()
     {
+        selection();
     }
     public DisSans(){
         GreenfootImage image = getImage(); image.scale(image.getWidth() /2, image.getHeight() /2); setImage(image);
@@ -43,6 +44,15 @@ public class DisSans extends Actor
         if (Greenfoot.isKeyDown("A")||Greenfoot.isKeyDown("left")) {
             setImage(new SansL().getImage());
             setLocation(getX()-2,getY());
+        }
+    }
+    public void selection(){
+        if(Greenfoot.mouseClicked(this)){
+            BrawlChoose world = (BrawlChoose) getWorld();
+            int currentPlayer = world.getPlayer();
+            world.setPlayer(currentPlayer + 1);
+            //Greenfoot.setWorld(new Lobby());
+            //getWorld().addObject(new SansF(),100,100);
         }
     }
 }
