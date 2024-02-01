@@ -21,28 +21,32 @@ public class GokuF extends Actor
     }
     public void checkW() {
         if (Greenfoot.isKeyDown("W")) {
-            setImage(new GokuB().getImage());
+            GreenfootImage image = new GreenfootImage("Goku_behind.png");
+            setImage(image);
             setLocation(getX(),getY()-2);
         }
     }
 
     public void checkS() {
         if (Greenfoot.isKeyDown("S")) {
-            setImage(new GokuF().getImage());
+            GreenfootImage image = new GreenfootImage("Goku_front.png");
+            setImage(image);
             setLocation(getX(),getY()+2);
         }
     }
 
     public void checkD() {
         if (Greenfoot.isKeyDown("D")) {
-            setImage(new GokuR().getImage());
+            GreenfootImage image = new GreenfootImage("Goku_right.png");
+            setImage(image);
             setLocation(getX()+2,getY());
         }
     }
 
     public void checkA() {
         if (Greenfoot.isKeyDown("A")) {
-            setImage(new GokuL().getImage());
+            GreenfootImage image = new GreenfootImage("Goku_left.png");
+            setImage(image);
             setLocation(getX()-2,getY());
         }
     }

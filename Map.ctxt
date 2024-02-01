@@ -1,9 +1,9 @@
 #BlueJ class context
 comment0.target=Map
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ Map\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\n\ Write\ a\ description\ of\ class\ Map\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
 comment1.params=
 comment1.target=Map()
-comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ Map.\r\n\ \r\n
+comment1.text=\n\ Constructor\ for\ objects\ of\ class\ Map.\n\ \n
 comment2.params=
 comment2.target=void\ act()
 comment3.params=
@@ -11,5 +11,11 @@ comment3.target=void\ prepare()
 comment4.params=
 comment4.target=void\ add()
 comment5.params=
-comment5.target=int\ getPlayer()
-numComments=6
+comment5.target=void\ showPlayer()
+comment6.params=
+comment6.target=void\ setHealth()
+comment7.params=
+comment7.target=void\ showHealth()
+comment8.params=
+comment8.target=int\ getPlayer()
+numComments=9

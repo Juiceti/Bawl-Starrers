@@ -24,28 +24,36 @@ public class LuffyF extends Actor
     }
     public void checkW() {
         if (Greenfoot.isKeyDown("W")) {
-            setImage(new LuffyB().getImage());
+            GreenfootImage image = new GreenfootImage("Luffy_behind.png");
+            image.scale(image.getWidth() /2, image.getHeight() /2); 
+            setImage(image);
             setLocation(getX(),getY()-2);
         }
     }
 
     public void checkS() {
         if (Greenfoot.isKeyDown("S")) {
-            setImage(new LuffyF().getImage());
+            GreenfootImage image = new GreenfootImage("Luffy_front.png");
+            image.scale(image.getWidth() /2, image.getHeight() /2); 
+            setImage(image);
             setLocation(getX(),getY()+2);
         }
     }
 
     public void checkD() {
         if (Greenfoot.isKeyDown("D")) {
-            setImage(new LuffyR().getImage());
+            GreenfootImage image = new GreenfootImage("Luffy_right.png");
+            image.scale(image.getWidth() /2, image.getHeight() /2); 
+            setImage(image);
             setLocation(getX()+2,getY());
         }
     }
 
     public void checkA() {
         if (Greenfoot.isKeyDown("A")) {
-            setImage(new LuffyL().getImage());
+            GreenfootImage image = new GreenfootImage("Luffy_left.png");
+            image.scale(image.getWidth() /2, image.getHeight() /2); 
+            setImage(image);
             setLocation(getX()-2,getY());
         }
     }

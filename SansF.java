@@ -24,28 +24,36 @@ public class SansF extends Actor
     }
     public void checkW() {
         if (Greenfoot.isKeyDown("W")) {
-            setImage(new SansB().getImage());
+            GreenfootImage image = new GreenfootImage("Undertale_behind.png");
+            image.scale(image.getWidth() /2, image.getHeight() /2); 
+            setImage(image);
             setLocation(getX(),getY()-2);
         }
     }
 
     public void checkS() {
         if (Greenfoot.isKeyDown("S")) {
-            setImage(new SansF().getImage());
+            GreenfootImage image = new GreenfootImage("Undertale_front.png");
+            image.scale(image.getWidth() /2, image.getHeight() /2); 
+            setImage(image);
             setLocation(getX(),getY()+2);
         }
     }
 
     public void checkD() {
         if (Greenfoot.isKeyDown("D")) {
-            setImage(new SansR().getImage());
+            GreenfootImage image = new GreenfootImage("Undertale_right.png");
+            image.scale(image.getWidth() /2, image.getHeight() /2); 
+            setImage(image);
             setLocation(getX()+2,getY());
         }
     }
 
     public void checkA() {
         if (Greenfoot.isKeyDown("A")) {
-            setImage(new SansL().getImage());
+            GreenfootImage image = new GreenfootImage("Undertale_left.png");
+            image.scale(image.getWidth() /2, image.getHeight() /2); 
+            setImage(image);
             setLocation(getX()-2,getY());
         }
     }

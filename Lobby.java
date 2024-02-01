@@ -9,9 +9,14 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class Lobby extends World
 
 {
-    public String test = "test";   
+//<<<<<<< HEAD
+    public String test = "test";
+    
+
+//=======
     
     
+//>>>>>>> ab15d831526748eaa795c47eff734d27618862ec
     /**
      * Constructor for objects of class Lobby.
      * 

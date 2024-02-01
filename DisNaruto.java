@@ -14,6 +14,7 @@ public class DisNaruto extends Actor
      */
     public void act()
     {
+        selection();
     }
     public DisNaruto(){
       
@@ -51,6 +52,22 @@ public class DisNaruto extends Actor
             // image.scale();
             setImage(image);
             setLocation(getX()-2,getY());
+        }
+    }
+    public void selection(){
+        if(Greenfoot.mouseClicked(this)){
+            BrawlChoose world = (BrawlChoose) getWorld();
+            Map world1 = (Map) getWorld();
+            int currentPlayer = world.getPlayer();
+            world.setPlayer(currentPlayer + 1);
+            if(world1.playerCounter == 2){
+                world1.player1 = "Naruto";
+            }
+            else if(world1.playerCounter == 3){
+                world1.player2 = "Naruto";
+            }
+            //Greenfoot.setWorld(new Lobby());
+            //getWorld().addObject(new NarutoF(),100,100);
         }
     }
 }

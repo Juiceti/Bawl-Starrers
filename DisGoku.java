@@ -14,10 +14,12 @@ public class DisGoku extends Actor
      */
     public void act()
     {
+        selection();
     }
     public void checkW() {
         if (Greenfoot.isKeyDown("W")||Greenfoot.isKeyDown("up")) {
-            setImage(new GokuB().getImage());
+            GreenfootImage image = new GreenfootImage("Goku_front.png");
+            setImage(image);
             setLocation(getX(),getY()-2);
         }
     }
@@ -31,15 +33,33 @@ public class DisGoku extends Actor
 
     public void checkD() {
         if (Greenfoot.isKeyDown("D")||Greenfoot.isKeyDown("right")) {
-            setImage(new GokuR().getImage());
+            GreenfootImage image = new GreenfootImage("Goku_front.png");
+            setImage(image);
             setLocation(getX()+2,getY());
         }
     }
 
     public void checkA() {
         if (Greenfoot.isKeyDown("A")||Greenfoot.isKeyDown("left")) {
-            setImage(new GokuL().getImage());
+            GreenfootImage image = new GreenfootImage("Goku_front.png");
+            setImage(image);
             setLocation(getX()-2,getY());
+        }
+    }
+    public void selection(){
+        if(Greenfoot.mouseClicked(this)){
+            BrawlChoose world = (BrawlChoose) getWorld();
+            Map world1 = (Map) getWorld();
+            int currentPlayer = world.getPlayer();
+            world.setPlayer(currentPlayer + 1);
+            if(world1.playerCounter == 2){
+                world1.player1 = "Goku";
+            }
+            else if(world1.playerCounter == 3){
+                world1.player2 = "Goku";
+            }
+            //Greenfoot.setWorld(new Lobby());
+            //getWorld().addObject(new GokuF(),100,100);
         }
     }
 }

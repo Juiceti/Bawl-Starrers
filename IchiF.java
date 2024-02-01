@@ -24,28 +24,36 @@ public class IchiF extends Actor
     }
     public void checkW() {
         if (Greenfoot.isKeyDown("W")) {
-            setImage(new IchiB().getImage());
+            GreenfootImage image = new GreenfootImage("Ichigo_behind.png");
+            image.scale(image.getWidth() /2, image.getHeight() /2); 
+            setImage(image);
             setLocation(getX(),getY()-2);
         }
     }
 
     public void checkS() {
         if (Greenfoot.isKeyDown("S")) {
-            setImage(new IchiF().getImage());
+            GreenfootImage image = new GreenfootImage("Ichigo_Front.png");
+            image.scale(image.getWidth() /2, image.getHeight() /2); 
+            setImage(image);
             setLocation(getX(),getY()+2);
         }
     }
 
     public void checkD() {
         if (Greenfoot.isKeyDown("D")) {
-            setImage(new IchiR().getImage());
+            GreenfootImage image = new GreenfootImage("Ichigo_right.png");
+            image.scale(image.getWidth() /2, image.getHeight() /2); 
+            setImage(image);
             setLocation(getX()+2,getY());
         }
     }
 
     public void checkA() {
         if (Greenfoot.isKeyDown("A")) {
-            setImage(new IchiL().getImage());
+            GreenfootImage image = new GreenfootImage("Ichigo_left.png");
+            image.scale(image.getWidth() /2, image.getHeight() /2); 
+            setImage(image);
             setLocation(getX()-2,getY());
         }
     }

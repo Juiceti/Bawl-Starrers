@@ -24,28 +24,36 @@ public class CatF extends Actor
     }
     public void checkW() {
         if (Greenfoot.isKeyDown("W")) {
-            setImage(new CatB().getImage());
+            GreenfootImage image = new GreenfootImage("Cat_behind.png");
+            image.scale(image.getWidth() /2, image.getHeight() /2); 
+            setImage(image);
             setLocation(getX(),getY()-2);
         }
     }
 
     public void checkS() {
         if (Greenfoot.isKeyDown("S")) {
-            setImage(new CatF().getImage());
+            GreenfootImage image = new GreenfootImage("Cat_front.png");
+            image.scale(image.getWidth() /2, image.getHeight() /2); 
+            setImage(image);
             setLocation(getX(),getY()+2);
         }
     }
 
     public void checkD() {
         if (Greenfoot.isKeyDown("D")) {
-            setImage(new CatR().getImage());
+            GreenfootImage image = new GreenfootImage("Cat_right.png");
+            image.scale(image.getWidth() /2, image.getHeight() /2); 
+            setImage(image);
             setLocation(getX()+2,getY());
         }
     }
 
     public void checkA() {
         if (Greenfoot.isKeyDown("A")) {
-            setImage(new CatL().getImage());
+            GreenfootImage image = new GreenfootImage("Cat_left.png");
+            image.scale(image.getWidth() /2, image.getHeight() /2); 
+            setImage(image);
             setLocation(getX()-2,getY());
         }
     }

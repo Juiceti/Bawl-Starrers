@@ -9,7 +9,6 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class DisCat extends Actor
 {
     public boolean newCat=true;
-    //public int myPlayerCounter = ((Map)getWorld()).playerCounter;
     /**
      * Act - do whatever the DisCat wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -23,7 +22,8 @@ public class DisCat extends Actor
     }
     public void checkW() {
         if (Greenfoot.isKeyDown("W")||Greenfoot.isKeyDown("up")) {
-            setImage(new CatB().getImage());
+            GreenfootImage image = new GreenfootImage("Cat_behind.png");
+            setImage(image);
             setLocation(getX(),getY()-2);
         }
     }
@@ -36,23 +36,33 @@ public class DisCat extends Actor
     }
     public void checkD() {
         if (Greenfoot.isKeyDown("D")||Greenfoot.isKeyDown("right")) {
-            setImage(new CatR().getImage());
+            GreenfootImage image = new GreenfootImage("Cat_right.png");
+            setImage(image);
             setLocation(getX()+2,getY());
         }
     }
 
     public void checkA() {
         if (Greenfoot.isKeyDown("A")||Greenfoot.isKeyDown("left")) {
-            setImage(new CatL().getImage());
+            GreenfootImage image = new GreenfootImage("Cat_left.png");
+            setImage(image);
             setLocation(getX()-2,getY());
         }
     }
     public void selection(){
         if(Greenfoot.mouseClicked(this)){
-            Greenfoot.setWorld(new Map());
-            getWorld().addObject(new CatF(),100,100);
-            newCat=true;
-            //System.out.println(myPlayerCounter);
+            BrawlChoose world = (BrawlChoose) getWorld();
+            Map world1 = (Map) getWorld();
+            int currentPlayer = world.getPlayer();
+            world.setPlayer(currentPlayer + 1);
+            if(world1.playerCounter == 2){
+                world1.player1 = "Kit";
+            }
+            else if(world1.playerCounter == 3){
+                world1.player2 = "Kit";
+            }
+            //Greenfoot.setWorld(new Lobby());
+            //getWorld().addObject(new CatF(),100,100);
         }
     }
 }
