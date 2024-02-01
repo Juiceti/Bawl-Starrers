@@ -52,4 +52,5 @@ public class BrawlChoose extends World
     public void setPlayer(int newPlayer){
         playerCounter = newPlayer;
     }
+    
 }
