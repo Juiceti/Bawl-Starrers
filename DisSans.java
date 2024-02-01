@@ -30,4 +30,13 @@ public class DisSans extends Actor
             //getWorld().addObject(new LuffyF(),100,100);
         }
     }
+    public void selection(){
+        if(Greenfoot.mouseClicked(this)){
+            BrawlChoose world = (BrawlChoose) getWorld();
+            int currentPlayer = world.getPlayer();
+            world.setPlayer(currentPlayer + 1);
+            //Greenfoot.setWorld(new Lobby());
+            //getWorld().addObject(new SansF(),100,100);
+        }
+    }
 }
