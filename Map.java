@@ -32,7 +32,7 @@ public class Map extends World
         //addObject(dog, 400, 300);
     }
     public void add(){
-        DisCat dis=new DisCat();
+        /*DisCat dis=new DisCat();
         if(dis.newCat==true){
             if(playerCounter == 0){
                 addObject(new CatF(), 100,100);
@@ -43,7 +43,7 @@ public class Map extends World
                 addObject(new CatFArrow(), 100, 500);
                 dis.newCat=false;
             }
-        }
+        }*/
     }
     public int getPlayer(){
         return playerCounter;

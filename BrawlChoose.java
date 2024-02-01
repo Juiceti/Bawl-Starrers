@@ -8,6 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class BrawlChoose extends World
 {
+    public int playerCounter = 1;
     /**
      * Constructor for objects of class BrawlChoose.
      * 
@@ -18,14 +19,11 @@ public class BrawlChoose extends World
         super(800, 600, 1);
         act();
         prepareSprites();
-        prepareText();
-        //selection();
     }
-    /*public void act() {
-        if (Greenfoot.mouseClicked(this)) {
-        Greenfoot.setWorld(new Map());
-        }
-    }*/
+    public void act() {
+        selection();
+        prepareText();
+    }
     public void prepareSprites(){
         addObject(new DisCat(), 200, 200);
         addObject(new DisGoku(), 400, 200);
@@ -35,7 +33,7 @@ public class BrawlChoose extends World
         addObject(new DisSans(), 600, 400);
     }
     public void prepareText(){
-        showText("CHOOSE YOUR CHARACTER", 400, 75);
+        showText("Player " + playerCounter + " CHOOSE YOUR CHARACTER", 400, 75); 
         showText("1 - KIT", 200, 275);
         showText("2 - GOKU", 400, 275);
         showText("3 - ICHIGO", 600, 275);
@@ -44,8 +42,14 @@ public class BrawlChoose extends World
         showText("6 - SANS", 600, 475);
     }
     public void selection(){
-        if(Greenfoot.mouseClicked(DisCat.class)){
+        if(playerCounter == 3){
             Greenfoot.setWorld(new Map());
         }
+    }
+    public int getPlayer(){
+        return playerCounter;
+    }
+    public void setPlayer(int newPlayer){
+        playerCounter = newPlayer;
     }
 }

@@ -9,7 +9,6 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class DisCat extends Actor
 {
     public boolean newCat=true;
-    //public int myPlayerCounter = ((Map)getWorld()).playerCounter;
     /**
      * Act - do whatever the DisCat wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -49,10 +48,11 @@ public class DisCat extends Actor
     }
     public void selection(){
         if(Greenfoot.mouseClicked(this)){
-            Greenfoot.setWorld(new Map());
-            getWorld().addObject(new CatF(),100,100);
-            newCat=true;
-            //System.out.println(myPlayerCounter);
+            BrawlChoose world = (BrawlChoose) getWorld();
+            int currentPlayer = world.getPlayer();
+            world.setPlayer(currentPlayer + 1);
+            //Greenfoot.setWorld(new Lobby());
+            //getWorld().addObject(new CatF(),100,100);
         }
     }
 }
