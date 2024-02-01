@@ -48,9 +48,11 @@ public class DisCat extends Actor
     }
     public void selection(){
         if(Greenfoot.mouseClicked(this)){
-            Greenfoot.setWorld(new Map());
-            getWorld().addObject(new CatF(),100,100);
-            newCat=true;
+            BrawlChoose world = (BrawlChoose) getWorld();
+            int currentPlayer = world.getPlayer();
+            world.setPlayer(currentPlayer + 1);
+            //Greenfoot.setWorld(new Lobby());
+            //getWorld().addObject(new CatF(),100,100);
         }
     }
 }

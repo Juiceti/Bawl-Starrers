@@ -7,10 +7,17 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @version (a version number or a date)
  */
 public class Lobby extends World
+
 {
+<<<<<<< HEAD
     public String test = "test";
     
 
+=======
+    public String test = "test";   
+    
+    
+>>>>>>> ab15d831526748eaa795c47eff734d27618862ec
     /**
      * Constructor for objects of class Lobby.
      * 
@@ -42,71 +49,16 @@ public class Lobby extends World
         addObject(cat4, 700, 500);
         LuffyF dog = new LuffyF();
         addObject(dog, 75, 500);
-        boolean person1_clicked = false;
-        String person1_character = "";
-        /*while(!person1_clicked){
-            if(Greenfoot.mouseClicked(cat)){
-                person1_clicked = true;
-                person1_character = "Kit";
-            }
-            else if(Greenfoot.mouseClicked(cat1)){
-                person1_clicked =  true;
-                person1_character = "Goku";
-            }
-            else if(Greenfoot.mouseClicked(cat2)){
-                person1_clicked =  true;
-                person1_character = "Ichi";
-            }
-            else if(Greenfoot.mouseClicked(cat3)){
-                person1_clicked =  true;
-                person1_character = "Naruto";
-            }
-            else if(Greenfoot.mouseClicked(cat4)){
-                person1_clicked =  true;
-                person1_character = "Sans";
-            }
-            else if(Greenfoot.mouseClicked(dog)){
-                person1_clicked =  true;
-                person1_character = "Luffy";
-            }
-        }*/
-        
     }
     private void prepare(){
         Load load = new Load();
         addObject(load, 400, 175);
-//<<<<<<< HEAD
+
+        
+        showText("Player 1, click on the character you would like to play to select it.", 400, 325);
         showText("CLICK ANYWHERE TO DUEL", 400, 325);
-        showText("B - HOW TO PLAY", 400, 375);
-        showText("C - Credits", 400, 425);
+        showText("HOLD SPACE FOR INSTRUCTIONS", 400, 375);
     } 
-    
-    private void pressB(){
-        boolean pressed = false;
-        if(Greenfoot.isKeyDown("b")){
-            showText("", 400, 325);
-        }
-        
-    }
-    private void switchc(){
-        
-    }
-    public void blah()
-    {
-        // Check if a specific key is pressed (for example, the spacebar)
-        if (Greenfoot.isKeyDown("space")) {
-            // Display text when the spacebar is pressed
-            showText("Spacebar pressed", getWidth() / 2, getHeight() / 2);
-        } else {
-            // Clear the text
-            showText("", getWidth() / 2, getHeight() / 2);
-        }
-    }
-//=======
-        //showText("CLICK ANYWHERE TO DUEL", 400, 325);
-        //showText("HOLD SPACE FOR INSTRUCTIONS", 400, 375);
-        //showText("Player 1, click on the character you would like to play to select it.", 400, 325);
-    }    
-    
-//>>>>>>> 5478d558fd0a5d7f59e2e7fd7f07d340ed484711
+}    
+
 
