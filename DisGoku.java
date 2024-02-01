@@ -57,8 +57,4 @@ public class DisGoku extends Actor
             //getWorld().addObject(new LuffyF(),100,100);
         }
     }
-<<<<<<< HEAD
-    
-=======
->>>>>>> c726eb41bb0a46e0b7eb20b2e1626c3179682c89
 }
