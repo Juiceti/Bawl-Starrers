@@ -33,7 +33,7 @@ public class BrawlChoose extends World
         addObject(new DisSans(), 600, 400);
     }
     public void prepareText(){
-        showText("Player " + playerCounter + " CHOOSE YOUR CHARACTER", 400, 75); 
+        showText("PLAYER " + playerCounter + " CHOOSE YOUR CHARACTER", 400, 75); 
         showText("1 - KIT", 200, 275);
         showText("2 - GOKU", 400, 275);
         showText("3 - ICHIGO", 600, 275);
