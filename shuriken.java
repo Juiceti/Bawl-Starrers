@@ -14,7 +14,7 @@ public class shuriken extends Actor{
 
     NarutoF Nar=new NarutoF();
     NarutoFArrow hello1 = new NarutoFArrow();
-    int direction;
+    public int direction;
     /**
      * Act - do whatever the shuriken wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -31,7 +31,9 @@ public class shuriken extends Actor{
         hello();
         touchy();
     }
-
+    public void setDirection(int nw){
+        direction = nw;
+    }
         
     public void touchy() {
         BrawlChoose world = (BrawlChoose)getWorld();

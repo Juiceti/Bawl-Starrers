@@ -13,7 +13,6 @@ public class Lobby extends World
     public int health_player1;
     public int health_player2;
 
-
     
     /**
      * Constructor for objects of class Lobby.

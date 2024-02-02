@@ -21,11 +21,9 @@ public class BrawlChoose extends World
         super(800, 600, 1);
         act();
         prepareSprites();
-        showHealth();
     }
     public void act() {
         counterText();
-        showHealth();
     }
     public void prepareSprites(){
         addObject(new DisCat(), 200, 200);
@@ -50,6 +48,8 @@ public class BrawlChoose extends World
     }
     public void counterText(){
         if(playerCounter >= 3){
+            showText("Health of P1: " + health_player1, 140, 50);
+            showText("Health of P2: " + health_player2, 650, 50);
             showText("", 400, 75); 
             showText("", 200, 275);
             showText("", 400, 275);

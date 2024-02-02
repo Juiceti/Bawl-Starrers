@@ -14,8 +14,7 @@ public class luffyAttack extends Actor
      */
     LuffyF luf=new LuffyF();
     LuffyFArrow luf1 = new LuffyFArrow();
-    int direction1;
-    int bob;
+    int direction;
     /**
      * Act - do whatever the shuriken wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -23,8 +22,7 @@ public class luffyAttack extends Actor
     public luffyAttack() {
         GreenfootImage image = getImage();
         image.scale(image.getWidth() /2, image.getHeight() /2); setImage(image);
-        direction1 = luf.direction1;
-        direction1 = luf1.direction1;
+        direction = luf.direction;
         
     }
     
@@ -43,22 +41,22 @@ public class luffyAttack extends Actor
         
     }
     public void hello(){
-        if(direction1==0){
+        if(direction==0){
                 
                 setLocation(getX(), getY()-5); 
             
         }
-        if(direction1==1){
+        if(direction==1){
             
                 setLocation(getX(), getY()+5); 
             
         }
-        if(direction1==2){
+        if(direction==2){
                 
                 setLocation(getX()+5, getY()); 
             
         }
-        if(direction1==3){
+        if(direction==3){
                 
                 setLocation(getX()-5, getY()); 
             

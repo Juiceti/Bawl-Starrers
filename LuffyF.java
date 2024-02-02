@@ -1,23 +1,27 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class LuffyF here.
+ * Write a description of class NarutoF here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
 public class LuffyF extends Actor
-{   
-    public static int direction1;
-    public int reload1;
+{
+    public int reload = 50;
+    public boolean up = false;
+    public boolean down = false;
+    public boolean left = false;
+    public boolean right = false;
+    public static int direction;
     /**
-     * Act - do whatever the LuffyF wants to do. This method is called whenever
+     * Act - do whatever the NarutoF wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     public void act()
     {
-        checkS();
         checkW();
+        checkS();
         checkD();
         checkA();
         shoot();
@@ -26,74 +30,65 @@ public class LuffyF extends Actor
         GreenfootImage image = getImage(); image.scale(image.getWidth() /2, image.getHeight() /2); setImage(image);
     }
     public void checkW() {
-        if (Greenfoot.isKeyDown("W")) {
+        if (Greenfoot.isKeyDown("w")) {
             GreenfootImage image = new GreenfootImage("Luffy_behind.png");
-            image.scale(image.getWidth() /2, image.getHeight() /2); 
+            image.scale(image.getWidth() /2, image.getHeight() /2); setImage(image);
             setImage(image);
-            setLocation(getX(),getY()-2);
-            direction1 = 0;
-        }
+            setLocation(getX(), getY()-2);
+        
+        direction = 0;
     }
-
+    }   
     public void checkS() {
-        if (Greenfoot.isKeyDown("S")) {
+        if (Greenfoot.isKeyDown("s")) {
             GreenfootImage image = new GreenfootImage("Luffy_front.png");
-            image.scale(image.getWidth() /2, image.getHeight() /2); 
+            image.scale(image.getWidth() /2, image.getHeight() /2); setImage(image);
+            // image.scale();
             setImage(image);
-            setLocation(getX(),getY()+2);
-            direction1 = 1;
-        }
+            setLocation(getX(), getY()+2);
+            direction = 1;
+            
     }
-
+    }       
     public void checkD() {
-        if (Greenfoot.isKeyDown("D")) {
-            GreenfootImage image = new GreenfootImage("Luffy_right.png");
-            image.scale(image.getWidth() /2, image.getHeight() /2); 
-            setImage(image);
-            setLocation(getX()+2,getY());
-            direction1 = 2;
-        }
-    }
 
-    public void checkA() {
-        if (Greenfoot.isKeyDown("A")) {
-            GreenfootImage image = new GreenfootImage("Luffy_left.png");
-            image.scale(image.getWidth() /2, image.getHeight() /2); 
+        if (Greenfoot.isKeyDown("d")) {
+            GreenfootImage image = new GreenfootImage("Luffy_right.png");
+            image.scale(image.getWidth() /2, image.getHeight() /2); setImage(image);
+            // image.scale();
             setImage(image);
-            setLocation(getX()-2,getY());
-            direction1 = 3;
-        }
+            setLocation(getX()+2, getY());
+            direction = 2;
+    }
+    }
+    public void checkA() {
+        if (Greenfoot.isKeyDown("a")) {
+            GreenfootImage image = new GreenfootImage("Luffy_left.png");
+            image.scale(image.getWidth() /2, image.getHeight() /2); setImage(image);
+            // image.scale();
+            setImage(image);
+            setLocation(getX()-2, getY());
+            direction = 3;
+    }
     }
     public void shoot(){
-        if(reload1>0){
-            reload1--;
+        if(reload>0){
+            reload--;
             
         }
         
-        if(reload1 == 0){
+        if(reload == 0){
             
             if(Greenfoot.isKeyDown("space")){
-                luffyAttack lAttack = new luffyAttack();
-                
-                if(direction1==0){
-                    getWorld().addObject(lAttack, getX(), getY()-3);
-                }
-                else if(direction1==1){
-                    getWorld().addObject(lAttack, getX(), getY()+3);
-                }
-                else if(direction1==2){
-                    getWorld().addObject(lAttack, getX()+3, getY());
-                }
-                else if(direction1==3){
-                    getWorld().addObject(lAttack, getX()-3, getY());
-                }
-                reload1 = 50;
+                luffyAttack Shuriken = new luffyAttack();
+                getWorld().addObject(Shuriken, getX(), getY()-3);
+                reload = 50;
             
             }
             
         }
     }
     public int getDirection(){
-        return direction1;
+        return direction;
     }
 }

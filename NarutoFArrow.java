@@ -72,21 +72,9 @@ public class NarutoFArrow extends Actor
         
         if(reload == 0){
             
-            if(Greenfoot.isKeyDown("space")){
+            if(Greenfoot.isKeyDown("enter")){
                 shuriken Shuriken = new shuriken();
-                
-                if(direction==0){
-                    getWorld().addObject(Shuriken, getX(), getY()-3);
-                }
-                else if(direction==1){
-                    getWorld().addObject(Shuriken, getX(), getY()+3);
-                }
-                else if(direction==2){
-                    getWorld().addObject(Shuriken, getX()+3, getY());
-                }
-                else if(direction==3){
-                    getWorld().addObject(Shuriken, getX()-3, getY());
-                }
+                getWorld().addObject(Shuriken, getX(), getY()-3);
                 reload = 50;
             
             }
