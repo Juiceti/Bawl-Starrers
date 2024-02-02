@@ -17,12 +17,13 @@ public class Map extends World
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(800, 600, 1);
-        
     }
     public void act(){
         Looser();
     }
     public void Looser(){
-        showText("GAME OVER", 400, 300);
+        BrawlChoose world = new BrawlChoose();
+        showText("GAME OVER!" , 400, 300);
+        Greenfoot.stop();
     }
 }

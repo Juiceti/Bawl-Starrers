@@ -90,6 +90,7 @@ public class LuffyF extends Actor
             if(Greenfoot.isKeyDown("space")){
                 luffyAttack Shuriken = new luffyAttack();
                 getWorld().addObject(Shuriken, getX(), getY()-3);
+                Greenfoot.playSound("Naruto.mp3");
                 reload = 50;
             
             }

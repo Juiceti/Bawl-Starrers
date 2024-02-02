@@ -11,6 +11,7 @@ public class BrawlChoose extends World
     public int playerCounter = 1;
     public int health_player1=1;
     public int health_player2=1;
+    //GreenfootSound sound = new GreenfootSound("Brawl Music.mp3");
     /**
      * Constructor for objects of class BrawlChoose.
      * 
@@ -21,7 +22,7 @@ public class BrawlChoose extends World
         super(800, 600, 1);
         act();
         prepareSprites();
-        Greenfoot.playSound("Brawl Music.mp3");
+        //sound.play();
     }
     public void act() {
         counterText();
@@ -72,6 +73,7 @@ public class BrawlChoose extends World
     }
     public void plsEndMySuffering(){
         if(health_player1 == 0 || health_player2 == 0){
+            //sound.pause();
             Greenfoot.setWorld(new Map());
         }
     }

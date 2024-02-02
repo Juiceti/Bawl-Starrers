@@ -83,6 +83,7 @@ public class NarutoFArrow extends Actor
             if(Greenfoot.isKeyDown("enter")){
                 shuriken Shuriken = new shuriken();
                 getWorld().addObject(Shuriken, getX(), getY()-3);
+                Greenfoot.playSound("Naruto.mp3");
                 reload = 50;
             
             }
