@@ -41,9 +41,6 @@ public class shuriken extends Actor{
             getWorld().removeObject(this);
             
         }
-        else if (isTouching(LuffyF.class)) {
-            getWorld().removeObject(this);
-        }
     }
     public void hello(){
         if(direction==0){

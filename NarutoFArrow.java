@@ -25,6 +25,14 @@ public class NarutoFArrow extends Actor
         checkD();
         checkA();
         shoot();
+        healthminus();
+    }
+    public void healthminus(){
+        if (isTouching(luffyAttack.class)){
+            removeTouching(luffyAttack.class);
+            BrawlChoose world = (BrawlChoose) getWorld();
+            world.health_player2--;
+        }
     }
     public void checkW() {
         if (Greenfoot.isKeyDown("up")) {

@@ -34,11 +34,11 @@ public class luffyAttack extends Actor
         
     public void touchy() {
         BrawlChoose world = (BrawlChoose)getWorld();
+        int currentHealth = world.getHealth1();
         if(getY()<20 || getY()>580 || getX()<20 || getX()>780){
             getWorld().removeObject(this);
             
         }
-        
     }
     public void hello(){
         if(direction==0){

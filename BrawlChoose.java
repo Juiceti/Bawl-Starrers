@@ -9,8 +9,8 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class BrawlChoose extends World
 {
     public int playerCounter = 1;
-    public int health_player1=0;
-    public int health_player2=0;
+    public int health_player1=1;
+    public int health_player2=1;
     /**
      * Constructor for objects of class BrawlChoose.
      * 
@@ -21,9 +21,11 @@ public class BrawlChoose extends World
         super(800, 600, 1);
         act();
         prepareSprites();
+        Greenfoot.playSound("Brawl Music.mp3");
     }
     public void act() {
         counterText();
+        plsEndMySuffering();
     }
     public void prepareSprites(){
         addObject(new DisCat(), 200, 200);
@@ -68,6 +70,11 @@ public class BrawlChoose extends World
             showText("SANS", 600, 475);
         }
     }
+    public void plsEndMySuffering(){
+        if(health_player1 == 0 || health_player2 == 0){
+            Greenfoot.setWorld(new Map());
+        }
+    }
     
     public int getPlayer(){
         return playerCounter;
@@ -75,5 +82,10 @@ public class BrawlChoose extends World
     public void setPlayer(int newPlayer){
         playerCounter = newPlayer;
     }
-    
+    public void setHealth1(int newH){
+        health_player1 = newH;
+    }
+    public int getHealth1(){
+        return health_player1;
+    }
 }

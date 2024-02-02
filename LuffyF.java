@@ -25,9 +25,17 @@ public class LuffyF extends Actor
         checkD();
         checkA();
         shoot();
+        healthminus();
     }
     public LuffyF(){
         GreenfootImage image = getImage(); image.scale(image.getWidth() /2, image.getHeight() /2); setImage(image);
+    }
+    public void healthminus(){
+        if (isTouching(shuriken.class)){
+            removeTouching(shuriken.class);
+            BrawlChoose world = (BrawlChoose) getWorld();
+            world.health_player1--;
+        }
     }
     public void checkW() {
         if (Greenfoot.isKeyDown("w")) {
