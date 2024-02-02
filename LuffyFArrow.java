@@ -6,7 +6,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class LuffyF extends Actor
+public class LuffyFArrow extends Actor
 {   
     public static int direction1;
     public int reload1;
@@ -22,46 +22,42 @@ public class LuffyF extends Actor
         checkA();
         shoot();
     }
-    public LuffyF(){
+    public LuffyFArrow(){
         GreenfootImage image = getImage(); image.scale(image.getWidth() /2, image.getHeight() /2); setImage(image);
     }
     public void checkW() {
-        if (Greenfoot.isKeyDown("W")) {
+        if (Greenfoot.isKeyDown("up")) {
             GreenfootImage image = new GreenfootImage("Luffy_behind.png");
             image.scale(image.getWidth() /2, image.getHeight() /2); 
             setImage(image);
             setLocation(getX(),getY()-2);
-            direction1 = 0;
         }
     }
 
     public void checkS() {
-        if (Greenfoot.isKeyDown("S")) {
+        if (Greenfoot.isKeyDown("down")) {
             GreenfootImage image = new GreenfootImage("Luffy_front.png");
             image.scale(image.getWidth() /2, image.getHeight() /2); 
             setImage(image);
             setLocation(getX(),getY()+2);
-            direction1 = 1;
         }
     }
 
     public void checkD() {
-        if (Greenfoot.isKeyDown("D")) {
+        if (Greenfoot.isKeyDown("right")) {
             GreenfootImage image = new GreenfootImage("Luffy_right.png");
             image.scale(image.getWidth() /2, image.getHeight() /2); 
             setImage(image);
             setLocation(getX()+2,getY());
-            direction1 = 2;
         }
     }
 
     public void checkA() {
-        if (Greenfoot.isKeyDown("A")) {
+        if (Greenfoot.isKeyDown("left")) {
             GreenfootImage image = new GreenfootImage("Luffy_left.png");
             image.scale(image.getWidth() /2, image.getHeight() /2); 
             setImage(image);
             setLocation(getX()-2,getY());
-            direction1 = 3;
         }
     }
     public void shoot(){
@@ -92,8 +88,5 @@ public class LuffyF extends Actor
             }
             
         }
-    }
-    public int getDirection(){
-        return direction1;
     }
 }

@@ -6,9 +6,13 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class NarutoF extends Actor
+public class NarutoFArrow extends Actor
 {
     public int reload = 50;
+    public boolean up = false;
+    public boolean down = false;
+    public boolean left = false;
+    public boolean right = false;
     public static int direction;
     /**
      * Act - do whatever the NarutoF wants to do. This method is called whenever
@@ -23,7 +27,7 @@ public class NarutoF extends Actor
         shoot();
     }
     public void checkW() {
-        if (Greenfoot.isKeyDown("W")) {
+        if (Greenfoot.isKeyDown("up")) {
             GreenfootImage image = new GreenfootImage("NarutoB.png");
             setImage(image);
             setLocation(getX(), getY()-2);
@@ -32,7 +36,7 @@ public class NarutoF extends Actor
     }
     }   
     public void checkS() {
-        if (Greenfoot.isKeyDown("S")) {
+        if (Greenfoot.isKeyDown("down")) {
             GreenfootImage image = new GreenfootImage("NarutoF.png");
             // image.scale();
             setImage(image);
@@ -43,7 +47,7 @@ public class NarutoF extends Actor
     }       
     public void checkD() {
 
-        if (Greenfoot.isKeyDown("D")) {
+        if (Greenfoot.isKeyDown("right")) {
             GreenfootImage image = new GreenfootImage("NarutoR.png");
             // image.scale();
             setImage(image);
@@ -52,7 +56,7 @@ public class NarutoF extends Actor
     }
     }
     public void checkA() {
-        if (Greenfoot.isKeyDown("A")) {
+        if (Greenfoot.isKeyDown("left")) {
             GreenfootImage image = new GreenfootImage("NarutoL.png");
             // image.scale();
             setImage(image);
