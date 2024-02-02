@@ -22,9 +22,7 @@ public class BrawlChoose extends World
         prepareSprites();
     }
     public void act() {
-        selection();
-        prepareText();
-        
+        counterText();
     }
     public void prepareSprites(){
         addObject(new DisCat(), 200, 200);
@@ -43,9 +41,24 @@ public class BrawlChoose extends World
         showText("NARUTO", 400, 475);
         showText("SANS", 600, 475);
     }
-    public void selection(){
-        if(playerCounter == 3){
-            Greenfoot.setWorld(new Map());
+    public void counterText(){
+        if(playerCounter >= 3){
+            showText("", 400, 75); 
+            showText("", 200, 275);
+            showText("", 400, 275);
+            showText("", 600, 275);
+            showText("", 200, 475);
+            showText("", 400, 475);
+            showText("", 600, 475);
+        }
+        else{
+            showText("PLAYER " + playerCounter + " CHOOSE YOUR CHARACTER", 400, 75); 
+            showText("KIT", 200, 275);
+            showText("GOKU", 400, 275);
+            showText("ICHIGO", 600, 275);
+            showText("LUFFY", 200, 475);
+            showText("NARUTO", 400, 475);
+            showText("SANS", 600, 475);
         }
     }
     

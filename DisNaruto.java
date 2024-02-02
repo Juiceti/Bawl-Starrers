@@ -21,13 +21,25 @@ public class DisNaruto extends Actor
       
     }
     public void selection(){
-        if(Greenfoot.mouseClicked(this)){
+        if(!Greenfoot.mouseClicked(this)){
             BrawlChoose world = (BrawlChoose) getWorld();
             int currentPlayer = world.getPlayer();
+            if(currentPlayer == 3){
+                getWorld().removeObject(this);
+            }
+        }
+        else{
+            BrawlChoose world = (BrawlChoose) getWorld();
+            //Map world1 = () getWorld();
+            int currentPlayer = world.getPlayer();
+            if(currentPlayer == 1){
+                world.addObject(new NarutoF(), 100, 100);
+            }
+            else{
+                world.addObject(new NarutoFArrow(), 700, 500);
+            }
+            getWorld().removeObject(this);
             world.setPlayer(currentPlayer + 1);
-            newNaruto = true;
-            //Greenfoot.setWorld(new Lobby());
-            //getWorld().addObject(new LuffyF(),100,100);
         }
     }
 }

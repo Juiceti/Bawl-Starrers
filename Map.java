@@ -35,12 +35,12 @@ public class Map extends World
     }
     public void prepare(){
         //SansF san = new SansF();
-        addObject(new NarutoF(), 400, 100);
+        //addObject(new NarutoF(), 400, 100);
         //addObject(san, 400, 550);
         //Piper pip = new Piper();
         //addObject(pip, 200, 50);
-        LuffyF dog = new LuffyF();
-        addObject(dog, 400, 300);
+        //LuffyF dog = new LuffyF();
+        //addObject(dog, 400, 300);
     }
     public void add(){
         /*DisCat dis=new DisCat();
