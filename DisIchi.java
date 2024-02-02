@@ -34,9 +34,11 @@ public class DisIchi extends Actor
             int currentPlayer = world.getPlayer();
             if(currentPlayer == 1){
                 world.addObject(new IchiF(), 100, 100);
+                world.health_player1=8;
             }
             else{
                 world.addObject(new IchiFArrow(), 700, 500);
+                world.health_player2=8;
             }
             getWorld().removeObject(this);
             world.setPlayer(currentPlayer + 1);

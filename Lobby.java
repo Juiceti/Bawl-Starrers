@@ -9,14 +9,12 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class Lobby extends World
 
 {
-//<<<<<<< HEAD
     public String test = "test";
-    
+    public int health_player1;
+    public int health_player2;
 
-//=======
+
     
-    
-//>>>>>>> ab15d831526748eaa795c47eff734d27618862ec
     /**
      * Constructor for objects of class Lobby.
      * 
@@ -35,6 +33,7 @@ public class Lobby extends World
         }
         
     }
+    
     public void choosing(){
         CatF cat = new CatF();
         addObject(cat, 200, 495);

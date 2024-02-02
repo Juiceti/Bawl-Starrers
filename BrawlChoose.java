@@ -9,7 +9,8 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class BrawlChoose extends World
 {
     public int playerCounter = 1;
-    
+    public int health_player1=0;
+    public int health_player2=0;
     /**
      * Constructor for objects of class BrawlChoose.
      * 
@@ -20,9 +21,11 @@ public class BrawlChoose extends World
         super(800, 600, 1);
         act();
         prepareSprites();
+        showHealth();
     }
     public void act() {
         counterText();
+        showHealth();
     }
     public void prepareSprites(){
         addObject(new DisCat(), 200, 200);
@@ -40,6 +43,10 @@ public class BrawlChoose extends World
         showText("LUFFY", 200, 475);
         showText("NARUTO", 400, 475);
         showText("SANS", 600, 475);
+    }
+    public void showHealth(){
+        showText("Health of P1: " + health_player1, 140, 50);
+        showText("Health of P2: " + health_player2, 650, 50);
     }
     public void counterText(){
         if(playerCounter >= 3){

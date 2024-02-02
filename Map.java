@@ -24,7 +24,6 @@ public class Map extends World
         super(800, 600, 1);
         prepare();
         add();
-        showHealth();
         showPlayer();
         act();
         checkCat();
